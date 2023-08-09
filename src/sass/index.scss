@@ -1,0 +1,19 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+@import './utils/variables';
+
+@import './base/base';
+@import './base/container';
+
+@import './components/main_btn';
+
+@import './layout/header';
+@import './layout/hero';
+@import './layout/checking';
+@import './layout/advertising';
+@import './layout/benefits';
+@import './layout/impact';
+@import './layout/partners';
+@import './layout/charity';
+@import './layout/footer';
+@import './layout/modal';

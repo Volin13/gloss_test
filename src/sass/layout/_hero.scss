@@ -1,0 +1,55 @@
+.hero {
+  padding-bottom: 47px;
+}
+
+.hero__card {
+  width: 1063px;
+  height: 583px;
+  font-weight: 700;
+}
+
+.hero__title {
+  font-size: 90px;
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+.hero__legend {
+  margin-bottom: 40px;
+}
+.hero__firstImage {
+  position: absolute;
+  width: 729.044px;
+  height: 809.146px;
+  z-index: -2;
+  top: 200px;
+  right: 0;
+  background-image: url('../assets/images/hero_first_img.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.hero__secondImage {
+  position: absolute;
+  width: 667px;
+  height: 654px;
+  z-index: -1;
+  top: 234px;
+  right: 75px;
+  background-image: url('../assets/images/hero_second_img.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.hero__learmMoreBtn {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+}
+.hero__learmMoreBtn span {
+  margin-bottom: 16px;
+}
+.hero__learmMoreBtn svg {
+  width: 18px;
+  height: 28px;
+}

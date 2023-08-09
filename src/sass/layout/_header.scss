@@ -1,0 +1,39 @@
+.header {
+  height: 104px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  width: 266px;
+  height: 71px;
+}
+.header__nav {
+  display: flex;
+}
+.header__nav_item:not(:last-of-type) {
+  margin-right: 50px;
+}
+.header__contacts {
+  display: flex;
+}
+
+.header__socialMedia {
+  display: flex;
+  margin-right: 40px;
+  align-items: center;
+}
+.header__socialMedia li:not(:last-of-type) {
+  margin-right: 12px;
+}
+.header__socialMediaIcon {
+  width: 35px;
+  height: 35px;
+}
+
+.header__schedule {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
