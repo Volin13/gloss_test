@@ -116,8 +116,23 @@ summary {
 }
 
 @font-face {
-  font-family: Proxima Nova;
-  src: url("proximanova_blackit.30985df5.otf") format("opentype"), url("proximanova_black.1927bfcf.ttf") format("truetype");
+  font-family: Proxima Nova Regular;
+  src: url("proximanova_regular.eb567f00.ttf") format("opentype"), url("proximanova_regular.eb567f00.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Proxima Nova Bold;
+  src: url("proximanova_bold.030f19ad.otf") format("opentype"), url("proximanova_bold.030f19ad.otf") format("truetype");
+}
+
+@font-face {
+  font-family: Proxima Nova Extra Bold;
+  src: url("proximanova_extrabold.fa048968.otf") format("opentype"), url("proximanova_extrabold.fa048968.otf") format("truetype");
+}
+
+@font-face {
+  font-family: Proxima Nova Black;
+  src: url("proximanova_black.ecd71d63.otf") format("opentype"), url("proximanova_black.1927bfcf.ttf") format("truetype");
 }
 
 body {
@@ -125,7 +140,7 @@ body {
   color: #333;
   background-color: #fffefb;
   margin: 0;
-  font-family: Proxima Nova, sans-serif;
+  font-family: Proxima Nova Regular, sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -173,12 +188,26 @@ hr {
   margin: 0;
 }
 
-.section {
+section {
   padding-top: 100px;
 }
 
+h1 {
+  font-family: Proxima Nova Black, sans-serif;
+}
+
+h2 {
+  margin-bottom: 50px;
+  font-family: Proxima Nova Extra Bold, sans-serif;
+  font-size: 44px;
+  line-height: 1.25;
+}
+
+h3, strong {
+  font-family: Proxima Nova Bold, sans-serif;
+}
+
 .container {
-  width: 100vw;
   min-width: 320px;
   max-width: 480px;
   margin: 0 auto;
@@ -215,7 +244,8 @@ hr {
 .header {
   justify-content: space-between;
   align-items: center;
-  height: 104px;
+  padding-top: 16px;
+  padding-bottom: 17px;
   display: flex;
 }
 
@@ -270,7 +300,6 @@ hr {
 .hero__title {
   margin-bottom: 20px;
   font-size: 90px;
-  font-weight: 900;
   line-height: 1.1;
 }
 
@@ -316,6 +345,222 @@ hr {
 .hero__learmMoreBtn svg {
   width: 18px;
   height: 28px;
+}
+
+.checking__block {
+  align-items: center;
+  display: flex;
+}
+
+.checking__image {
+  border-radius: 10px;
+  width: 900px;
+  height: 464px;
+  margin-right: 40px;
+}
+
+.checking__list li:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+
+.checking__list {
+  height: 390px;
+  overflow: scroll;
+}
+
+.advertising__yellowBox {
+  background: linear-gradient(132deg, #ffdf00b3 0%, #ffb800b3 100%), #fffefc;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 139px;
+  display: flex;
+}
+
+.advertising__textBox {
+  max-width: 50%;
+}
+
+.advertising__list {
+  margin-bottom: 28px;
+}
+
+.advertising__list li:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+
+.advertising__partnersList {
+  display: flex;
+}
+
+.advertising__partnersList li:not(:last-of-type) {
+  margin-right: 50px;
+}
+
+.advertising__img {
+  background-image: url("advertising_img.bb9a6530.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 646px;
+  height: 427px;
+}
+
+.backgroundFigure {
+  position: absolute;
+  top: 1395px;
+  left: 0;
+  transform: rotate(57.235deg);
+}
+
+.benefits__box {
+  justify-content: center;
+  gap: 257px;
+  line-height: 1.25;
+  display: flex;
+}
+
+.benefits__firstList {
+  text-align: end;
+}
+
+.benefits__firstListItem, .benefits__secondListItem {
+  max-width: 505px;
+  margin-bottom: 30px;
+}
+
+.benefits__title, .benefits__title {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.benefits__firstListItem:first-child:after {
+  content: "";
+  stroke: #333;
+  background: url("icons.81ed4e63.svg#first") 0 0 / cover;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.benefits__firstListItem:nth-child(2):after {
+  content: "";
+  stroke: #333;
+  background: url("icons.81ed4e63.svg#second") 0 0 / cover;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.benefits__firstListItem:nth-child(3):after {
+  content: "";
+  stroke: #333;
+  background: url("icons.81ed4e63.svg#third") 0 0 / cover;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.benefits__firstListItem:nth-child(4):after {
+  content: "";
+  stroke: #333;
+  background: url("icons.81ed4e63.svg#fourth") 0 0 / cover;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.benefits__firstListItem:nth-child(5):after {
+  content: "";
+  stroke: #333;
+  background: url("icons.81ed4e63.svg#fifth") 0 0 / cover;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.benefits__secondListItem:first-child:before {
+  content: "";
+  stroke: #333;
+  background: url("icons.81ed4e63.svg#sixth") 0 0 / cover;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.benefits__secondListItem:nth-child(2):before {
+  content: "";
+  stroke: #333;
+  background: url("icons.81ed4e63.svg#seventh") 0 0 / cover;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.benefits__secondListItem:nth-child(3):before {
+  content: "";
+  stroke: #333;
+  background: url("icons.81ed4e63.svg#eighth") 0 0 / cover;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.benefits__secondListItem:nth-child(4):before {
+  content: "";
+  stroke: #333;
+  background: url("icons.81ed4e63.svg#ninth") 0 0 / cover;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.benefits__secondListItem:nth-child(5):before {
+  content: "";
+  stroke: #333;
+  background: url("icons.81ed4e63.svg#tenth") 0 0 / cover;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
 }
 
 /*# sourceMappingURL=index.b07a87f3.css.map */

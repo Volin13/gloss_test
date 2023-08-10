@@ -1,0 +1,65 @@
+.benefits__box {
+  display: flex;
+  gap: 257px;
+  justify-content: center;
+  line-height: 1.25;
+}
+// .benefits__firstList,
+// .benefits__secondList {
+//  height: ;
+// }
+
+.benefits__firstList {
+  text-align: end;
+}
+
+.benefits__firstListItem,
+.benefits__secondListItem {
+  max-width: 505px;
+  margin-bottom: 30px;
+}
+
+.benefits__title,
+.benefits__title {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+$countFirst: first, second, third, fourth, fifth;
+$countSecond: sixth, seventh, eighth, ninth, tenth;
+
+@each $count in $countFirst {
+  $index: index($countFirst, $count);
+  .benefits__firstListItem:nth-child(#{$index})::after {
+    content: '';
+    stroke: $primary_black;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: $yellow_gradient;
+    background-size: cover;
+    background-image: url('../assets/images/icons.svg##{$count}');
+  }
+}
+
+@each $count in $countSecond {
+  $index: index($countSecond, $count);
+  .benefits__secondListItem:nth-child(#{$index})::before {
+    content: '';
+    stroke: $primary_black;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: $yellow_gradient;
+    background-size: cover;
+    background-image: url('../assets/images/icons.svg##{$count}');
+  }
+}

@@ -1,0 +1,18 @@
+.checking__block {
+  display: flex;
+  align-items: center;
+}
+
+.checking__image {
+  border-radius: 10px;
+  margin-right: 40px;
+  width: 900px;
+  height: 464px;
+}
+.checking__list li:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+.checking__list {
+  height: 390px;
+  overflow: scroll;
+}
