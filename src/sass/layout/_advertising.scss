@@ -40,7 +40,13 @@
 
 .backgroundFigure {
   position: absolute;
+  width: 728.885px;
+  height: 809.146px;
   top: 1395px;
+  background-image: url('../assets/images/bg/bgFigure1.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
   left: 0;
+  z-index: -1;
   transform: rotate(57.235deg);
 }
