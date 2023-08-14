@@ -156,4 +156,13 @@ h3 {
 }
 strong {
   font-family: 'Proxima Nova Bold', sans-serif;
+  color: $primary_black;
+}
+b {
+  color: $primary_black;
+  font-family: 'Proxima Nova Bold', sans-serif;
+}
+a,
+address {
+  text-decoration: none;
 }

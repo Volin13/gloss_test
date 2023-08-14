@@ -1,0 +1,60 @@
+.footer {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+      0deg,
+      rgba(45, 44, 44, 0.9) 0%,
+      rgba(45, 44, 44, 0.9) 100%
+    ),
+    url('../assets/images/footer/footer1x-min.jpg');
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(45, 44, 44, 0.9) 0%,
+        rgba(45, 44, 44, 0.9) 100%
+      ),
+      url('../assets/images/footer/footer2x-min.jpg');
+  }
+  //   @media screen and(min-width:768px) {
+  //     background-image: linear-gradient(0deg, rgba(45, 44, 44, 0.90) 0%, rgba(45, 44, 44, 0.90) 100%),
+  //       url('../images/tablet/hero.jpg');
+  //     @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  //       background-image: linear-gradient(0deg, rgba(45, 44, 44, 0.90) 0%, rgba(45, 44, 44, 0.90) 100%),
+  //         url('../images/tablet/hero@2x.jpg');
+  //     }
+  // }
+}
+.footer__thumb {
+  display: flex;
+  width: 1920px;
+  margin: 0 auto;
+}
+.footer__textBox {
+  background-color: $primary_yellow;
+  font-size: 16px;
+  padding: 40px 30px 55px 75px;
+  max-width: 525px;
+}
+.footer__text {
+  margin-bottom: 69px;
+}
+.footer__contactBox {
+  padding: 50px 105px 155px 120px;
+}
+.header__logo {
+  margin-bottom: 30px;
+}
+.footer__contactBox {
+  width: 1395px;
+  display: flex;
+  justify-content: space-between;
+  color: $primary_white;
+}
+.footer__contactThumb {
+  max-width: 335px;
+}

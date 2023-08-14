@@ -1,12 +1,15 @@
-.advertising__yellowBox {
-  display: flex;
-  justify-content: space-between;
+.advertising {
   background: linear-gradient(
       132deg,
       rgba(255, 223, 0, 0.7) 0%,
       rgba(255, 184, 0, 0.7) 100%
     ),
     #fffefc;
+}
+
+.advertising__thumb {
+  display: flex;
+  justify-content: space-between;
   padding-top: 50px;
   padding-bottom: 50px;
   padding-right: 139px;

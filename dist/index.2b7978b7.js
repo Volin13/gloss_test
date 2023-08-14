@@ -630,7 +630,7 @@ images.forEach(function(image) {
     swiperWrapper.appendChild(slide);
 });
 
-},{"swiper":"iM6UL","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","swiper/modules":"9ktz6"}],"iM6UL":[function(require,module,exports) {
+},{"swiper":"iM6UL","swiper/modules":"9ktz6","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"iM6UL":[function(require,module,exports) {
 /**
  * Swiper 10.1.0
  * Most modern mobile touch slider and framework with hardware accelerated transitions

@@ -1,10 +1,9 @@
-.benefist {
+.benefits {
   position: relative;
 }
 .benefits__box {
   display: flex;
-  gap: 457px;
-  justify-content: center;
+  justify-content: space-between;
   line-height: 1.25;
 }
 // .benefits__firstList,
@@ -19,10 +18,17 @@
   font-size: 16px;
 }
 
+.benefits__firstList,
+.benefits__secondList {
+  min-height: 705px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
 .benefits__firstListItem,
 .benefits__secondListItem {
   max-width: 520px;
-  margin-bottom: 30px;
   position: relative;
   min-height: 125px;
 }
@@ -50,11 +56,11 @@ $countFirst: first, second, third, fourth, fifth;
     background-repeat: no-repeat;
   }
 }
-$marginFirst: 0, -53, -86, -54, 0;
-@each $marginValue in $marginFirst {
-  $index: index($marginFirst, $marginValue);
+$marginFirst: 166, 33, 0, 34, 165;
+@each $marginValueFirst in $marginFirst {
+  $index: index($marginFirst, $marginValueFirst);
   .benefits__firstListItem:nth-child(#{$index}) {
-    margin-left: #{$marginValue}px;
+    margin-left: #{$marginValueFirst}px;
   }
 }
 
@@ -77,17 +83,18 @@ $countSecond: sixth, seventh, eighth, ninth, tenth;
   }
 }
 
-$marginSecond: 0, -53, -86, -54, 0;
-@each $marginValue in $marginSecond {
-  $index: index($marginSecond, $marginValue);
+$marginSecond: 0, 133, 166, 134, 0;
+@each $marginValueSecond in $marginSecond {
+  $index: index($marginSecond, $marginValueSecond);
   .benefits__secondListItem:nth-child(#{$index}) {
-    margin-right: #{$marginValue}px;
+    margin-left: #{$marginValueSecond}px;
   }
 }
 .benefits__mainLogo {
   width: 455px;
   height: 432px;
   position: absolute;
+  display: inline-block;
   z-index: -1;
   top: 339px;
   left: 50%;
@@ -96,6 +103,7 @@ $marginSecond: 0, -53, -86, -54, 0;
   background-repeat: no-repeat;
   background-size: contain;
 }
+
 .bgImg2 {
   position: absolute;
   width: 613.616px;
