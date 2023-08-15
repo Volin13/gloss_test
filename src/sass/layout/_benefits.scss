@@ -5,6 +5,7 @@
   display: flex;
   justify-content: space-between;
   line-height: 1.25;
+  margin-bottom: 50px;
 }
 // .benefits__firstList,
 // .benefits__secondList {
@@ -113,4 +114,24 @@ $marginSecond: 0, 133, 166, 134, 0;
   top: 2970px;
   right: 0;
   z-index: -1;
+}
+.swiper-thumb {
+  position: relative;
+}
+.swiper_button {
+  display: inline-block;
+  width: 56px;
+  height: 53px;
+  stroke: $primary_black;
+  position: absolute;
+  z-index: 2;
+  transform: translateY(-50%);
+}
+.swiper-button-prev {
+  left: -28px;
+  top: 50%;
+}
+.swiper-button-next {
+  right: -28px;
+  top: 50%;
 }

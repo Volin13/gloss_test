@@ -4,7 +4,8 @@
 
 @import './base/base';
 @import './base/container';
-
+@import '../../node_modules/swiper/swiper-vars.scss';
+@import '../../node_modules/swiper/swiper.scss';
 @import './components/main_btn';
 
 @import './layout/header';

@@ -165,4 +165,12 @@
 <path fill="#333" style="fill: var(--color4, #333)" d="M25.806 11.666l-2.321-10.959-2.665 2.381 4.986 8.578z"></path>
 <path fill="#019ad2" style="fill: var(--color5, #019ad2)" d="M17.872 0l15.75 27.095h-31.5l15.75-27.095zM17.872 9.921l-7.12 12.248h14.239l-7.12-12.248z"></path>
 </symbol>
+<symbol id="arrowRight" viewBox="0 0 34 32">
+<path fill="#ffe30b" style="fill: var(--color1, #ffe30b)" d="M0 0h33.811v32h-33.811v-32z"></path>
+<path fill="none" stroke="#333" style="stroke: var(--color2, #333)" stroke-linejoin="bevel" stroke-linecap="square" stroke-miterlimit="4" stroke-width="0.6038" d="M7.245 16h19.321M26.566 16l-6.21 6.34M26.566 16l-6.21-6.34"></path>
+</symbol>
+<symbol id="arrowLeft" viewBox="0 0 34 32">
+<path fill="#fff" style="fill: var(--color3, #fff)" d="M33.811 0h-33.811v32h33.811v-32z"></path>
+<path fill="none" stroke="#333" style="stroke: var(--color2, #333)" stroke-linejoin="bevel" stroke-linecap="square" stroke-miterlimit="4" stroke-width="0.6038" d="M26.566 16h-19.321M7.245 16l6.21 6.34M7.245 16l6.21-6.34"></path>
+</symbol>
 </svg>

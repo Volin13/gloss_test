@@ -578,10 +578,6 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _swiper = require("swiper");
 var _swiperDefault = parcelHelpers.interopDefault(_swiper);
 var _modules = require("swiper/modules");
-const image1 = "./assets/images/benefits/image1-min.jpg";
-const image2 = "./assets/images/benefits/image2-min.jpg";
-const image3 = "./assets/images/benefits/image3-min.jpg";
-const image4 = "./assets/images/benefits/image4-min.jpg";
 const swiperWrapper = document.querySelector(".swiper-wrapper");
 // Now you can use Swiper
 const swiper = new (0, _swiperDefault.default)(".swiper", {
@@ -590,7 +586,8 @@ const swiper = new (0, _swiperDefault.default)(".swiper", {
     grabCursor: true,
     mousewheel: true,
     modules: [
-        (0, _modules.Mousewheel)
+        (0, _modules.Mousewheel),
+        (0, _modules.Navigation)
     ],
     loop: true,
     breakpoints: {
@@ -612,22 +609,6 @@ const swiper = new (0, _swiperDefault.default)(".swiper", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev"
     }
-});
-const images = [
-    image1,
-    image2,
-    image3,
-    image4,
-    image1,
-    image2,
-    image3,
-    image4
-];
-images.forEach(function(image) {
-    let slide = document.createElement("div");
-    slide.className = "swiper-slide";
-    slide.innerHTML = '<img src="' + image + '" alt="веб студія Глянець">';
-    swiperWrapper.appendChild(slide);
 });
 
 },{"swiper":"iM6UL","swiper/modules":"9ktz6","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"iM6UL":[function(require,module,exports) {
