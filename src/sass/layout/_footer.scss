@@ -31,13 +31,14 @@
 }
 .footer__thumb {
   display: flex;
-  width: 1920px;
   margin: 0 auto;
+  width: 1920px;
 }
 .footer__textBox {
   background-color: $primary_yellow;
   font-size: 16px;
-  padding: 40px 30px 55px 75px;
+  line-height: 1.25;
+  padding: 50px 30px 55px 75px;
   max-width: 525px;
 }
 .footer__text {
@@ -54,7 +55,54 @@
   display: flex;
   justify-content: space-between;
   color: $primary_white;
+  font-size: 24px;
+  line-height: 1.25;
 }
 .footer__contactThumb {
   max-width: 335px;
+}
+.footer__title {
+  margin-bottom: 30px;
+}
+.footer__socialLinksList {
+  display: flex;
+  gap: 45px;
+  align-items: center;
+}
+.footer__contactsItem:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+.footer__addressItem:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+.footer__addressList {
+  max-width: 297px;
+}
+.footer__coordinats {
+  font-size: 20px;
+  line-height: 1.5;
+}
+.footer__contactsList {
+  max-width: 260px;
+}
+.footer__boldNumber {
+  font-family: 'century gothic bold';
+}
+.footer__spacialNumber span {
+  font-size: 20px;
+  margin-left: 8px;
+  line-height: 1.5;
+}
+.footer__spacialNumber {
+  display: flex;
+  align-items: center;
+}
+.footer__partnersThumb {
+  max-width: 343px;
+}
+.footer__partnersThumb li {
+  display: inline;
+}
+.footer__partnersThumb li:first-child {
+  margin-right: 45px;
 }

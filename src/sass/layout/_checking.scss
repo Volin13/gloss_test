@@ -15,4 +15,18 @@
 .checking__list {
   height: 390px;
   overflow: scroll;
+  scroll-behavior: smooth;
+  padding-right: 19px;
+}
+.checking__list::-webkit-scrollbar {
+  width: 7px;
+}
+.checking__list::-webkit-scrollbar-thumb {
+  background-color: $primary_yellow;
+  border-radius: 5px;
+}
+
+/* Customize the thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: $secondary_yellow;
 }

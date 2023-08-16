@@ -135,6 +135,11 @@ summary {
   src: url("proximanova_black.ecd71d63.otf") format("opentype"), url("proximanova_black.1927bfcf.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: century gothic bold;
+  src: url("CenturyGothic-Bold.bed33c38.ttf") format("opentype"), url("CenturyGothic-Bold.bed33c38.ttf") format("truetype");
+}
+
 body {
   letter-spacing: .02em;
   color: #333;
@@ -207,13 +212,21 @@ h3 {
   font-family: Proxima Nova Bold, sans-serif;
 }
 
-strong, b {
+strong {
   color: #333;
   font-family: Proxima Nova Bold, sans-serif;
 }
 
-a, address {
+b {
+  font-family: Proxima Nova Bold, sans-serif;
+}
+
+a {
   text-decoration: none;
+}
+
+address {
+  font-style: normal;
 }
 
 .container {
@@ -602,8 +615,23 @@ a, address {
 }
 
 .checking__list {
+  scroll-behavior: smooth;
   height: 390px;
+  padding-right: 19px;
   overflow: scroll;
+}
+
+.checking__list::-webkit-scrollbar {
+  width: 7px;
+}
+
+.checking__list::-webkit-scrollbar-thumb {
+  background-color: #ffd00e;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ffe30b;
 }
 
 .advertising {
@@ -961,16 +989,6 @@ a, address {
   position: relative;
 }
 
-.swiper_button {
-  stroke: #333;
-  z-index: 2;
-  width: 56px;
-  height: 53px;
-  display: inline-block;
-  position: absolute;
-  transform: translateY(-50%);
-}
-
 .swiper-button-prev {
   top: 50%;
   left: -28px;
@@ -1008,6 +1026,43 @@ a, address {
 
 .impact__icon {
   display: inline;
+}
+
+.partners__swiper-thumb {
+  position: relative;
+}
+
+.partners__item {
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 147px;
+  display: flex;
+  box-shadow: 1px 1px 5px 2px #b1b1b1;
+}
+
+.partners__image {
+  width: 100%;
+}
+
+.swiper_button {
+  stroke: #333;
+  z-index: 2;
+  width: 56px;
+  height: 53px;
+  display: inline-block;
+  position: absolute;
+  transform: translateY(-50%);
+}
+
+.partners-swiper-button-prev {
+  top: 50%;
+  left: -28px;
+}
+
+.partners-swiper-button-next {
+  top: 50%;
+  right: -28px;
 }
 
 .charity {
@@ -1137,8 +1192,9 @@ a, address {
 .footer__textBox {
   background-color: #ffd00e;
   max-width: 525px;
-  padding: 40px 30px 55px 75px;
+  padding: 50px 30px 55px 75px;
   font-size: 16px;
+  line-height: 1.25;
 }
 
 .footer__text {
@@ -1157,11 +1213,67 @@ a, address {
   color: #fff;
   justify-content: space-between;
   width: 1395px;
+  font-size: 24px;
+  line-height: 1.25;
   display: flex;
 }
 
 .footer__contactThumb {
   max-width: 335px;
+}
+
+.footer__title {
+  margin-bottom: 30px;
+}
+
+.footer__socialLinksList {
+  align-items: center;
+  gap: 45px;
+  display: flex;
+}
+
+.footer__contactsItem:not(:last-of-type), .footer__addressItem:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+
+.footer__addressList {
+  max-width: 297px;
+}
+
+.footer__coordinats {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.footer__contactsList {
+  max-width: 260px;
+}
+
+.footer__boldNumber {
+  font-family: century gothic bold;
+}
+
+.footer__spacialNumber span {
+  margin-left: 8px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.footer__spacialNumber {
+  align-items: center;
+  display: flex;
+}
+
+.footer__partnersThumb {
+  max-width: 343px;
+}
+
+.footer__partnersThumb li {
+  display: inline;
+}
+
+.footer__partnersThumb li:first-child {
+  margin-right: 45px;
 }
 
 /*# sourceMappingURL=index.b07a87f3.css.map */

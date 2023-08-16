@@ -578,7 +578,6 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _swiper = require("swiper");
 var _swiperDefault = parcelHelpers.interopDefault(_swiper);
 var _modules = require("swiper/modules");
-const swiperWrapper = document.querySelector(".swiper-wrapper");
 // Now you can use Swiper
 const swiper = new (0, _swiperDefault.default)(".swiper", {
     speed: 500,

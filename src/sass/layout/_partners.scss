@@ -1,0 +1,31 @@
+.partners__swiper-thumb {
+  position: relative;
+}
+.partners__item {
+  display: flex;
+  width: 270px;
+  height: 147px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 5px 2px rgb(177, 177, 177);
+}
+.partners__image {
+  width: 100%;
+}
+.swiper_button {
+  display: inline-block;
+  width: 56px;
+  height: 53px;
+  stroke: $primary_black;
+  position: absolute;
+  z-index: 2;
+  transform: translateY(-50%);
+}
+.partners-swiper-button-prev {
+  left: -28px;
+  top: 50%;
+}
+.partners-swiper-button-next {
+  right: -28px;
+  top: 50%;
+}

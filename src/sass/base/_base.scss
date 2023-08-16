@@ -18,6 +18,11 @@
   src: url('../assets/fonts/proximanova_black.otf') format('opentype'),
     url('../assets/fonts/proximanova_black.ttf') format('truetype');
 }
+@font-face {
+  font-family: 'century gothic bold';
+  src: url('../assets/fonts/CenturyGothic-Bold.ttf') format('opentype'),
+    url('../assets/fonts/CenturyGothic-Bold.ttf') format('truetype');
+}
 body {
   margin: 0;
   font-family: 'Proxima Nova Regular', sans-serif;
@@ -159,10 +164,11 @@ strong {
   color: $primary_black;
 }
 b {
-  color: $primary_black;
   font-family: 'Proxima Nova Bold', sans-serif;
 }
-a,
-address {
+a {
   text-decoration: none;
+}
+address {
+  font-style: normal;
 }
