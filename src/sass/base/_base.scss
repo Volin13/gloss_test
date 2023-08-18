@@ -1,7 +1,6 @@
 @font-face {
   font-family: 'Proxima Nova Regular';
-  src: url('../assets/fonts/proximanova_regular.ttf') format('opentype'),
-    url('../assets/fonts/proximanova_regular.ttf') format('truetype');
+  src: url('../assets/fonts/proximanova_regular.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Proxima Nova Bold';
@@ -19,9 +18,12 @@
     url('../assets/fonts/proximanova_black.ttf') format('truetype');
 }
 @font-face {
+  font-family: 'Proxima Nova Semibold';
+  src: url('../assets/fonts/ProximaNova-Semibold.ttf') format('truetype');
+}
+@font-face {
   font-family: 'century gothic bold';
-  src: url('../assets/fonts/CenturyGothic-Bold.ttf') format('opentype'),
-    url('../assets/fonts/CenturyGothic-Bold.ttf') format('truetype');
+  src: url('../assets/fonts/CenturyGothic-Bold.ttf') format('truetype');
 }
 body {
   margin: 0;
@@ -33,6 +35,9 @@ body {
   font-style: normal;
   background-color: $bg_color;
   color: $primary_black;
+}
+body.no-scroll {
+  overflow: hidden;
 }
 /* Box sizing rules */
 *,
@@ -147,6 +152,9 @@ hr {
 section {
   padding-top: 100px;
 }
+svg {
+  height: auto;
+}
 h1 {
   font-family: 'Proxima Nova Black', sans-serif;
 }
@@ -171,4 +179,7 @@ a {
 }
 address {
   font-style: normal;
+}
+.previewSection {
+  height: 100vh;
 }

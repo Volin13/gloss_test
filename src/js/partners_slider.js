@@ -1,7 +1,7 @@
 import Swiper from 'swiper';
 import { Mousewheel, Navigation } from 'swiper/modules';
 // Now you can use Swiper
-const partnersSwiper = new Swiper('.partners__swiper', {
+const swiper2 = new Swiper('.partners__swiper', {
   speed: 500,
   direction: 'horizontal',
   grabCursor: true,

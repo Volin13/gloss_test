@@ -4,11 +4,21 @@
   </svg>
   <nav>
     <ul class="header__nav">
-      <li class="header__nav_item"><a href="#">Чому ми</a></li>
-      <li class="header__nav_item"><a href="#">Партнери</a></li>
-      <li class="header__nav_item"><a href="#">Благодійність</a></li>
-      <li class="header__nav_item"><a href="#">Про нас</a></li>
-      <li class="header__nav_item"><a href="#">Drupal</a></li>
+      <li class="header__nav_item">
+        <a class="nav__link" href="#benefits">Чому ми</a>
+      </li>
+      <li class="header__nav_item">
+        <a class="nav__link" href="#partners">Партнери</a>
+      </li>
+      <li class="header__nav_item">
+        <a class="nav__link" href="#charity">Благодійність</a>
+      </li>
+      <li class="header__nav_item">
+        <a class="nav__link" href="#advertising">Про нас</a>
+      </li>
+      <li class="header__nav_item">
+        <a class="nav__link" href="#drupal">Drupal</a>
+      </li>
     </ul>
   </nav>
 
@@ -32,10 +42,25 @@
     </ul>
     <div class="header__phoneNumbers">
       <span class="header__schedule">Пн-Пт з 10 до 18</span>
-      <ul>
-        <li><a href="tel:0 (800) 759-759">0 (800) 759-759</a></li>
-        <li><a href="tel:0 (800) 759-758">0 (800) 759-758</a></li>
-      </ul>
+      <div class="header__phonesThumb">
+        <ul>
+          <li>
+            <a class="header__number" href="tel:0 (800) 759-759"
+              >0 (800) 759-759</a
+            >
+          </li>
+          <li>
+            <a class="header__number" href="tel:0 (800) 759-758"
+              >0 (800) 759-758</a
+            >
+          </li>
+        </ul>
+        <button class="arrowButton" type="button">
+          <svg class="arrowIcon" width="24" height="24">
+            <use href="./assets/images/icons.svg#arrowDown"></use>
+          </svg>
+        </button>
+      </div>
     </div>
   </div>
 </header>

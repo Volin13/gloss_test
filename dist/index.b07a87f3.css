@@ -117,7 +117,7 @@ summary {
 
 @font-face {
   font-family: Proxima Nova Regular;
-  src: url("proximanova_regular.eb567f00.ttf") format("opentype"), url("proximanova_regular.eb567f00.ttf") format("truetype");
+  src: url("proximanova_regular.eb567f00.ttf") format("truetype");
 }
 
 @font-face {
@@ -136,8 +136,13 @@ summary {
 }
 
 @font-face {
+  font-family: Proxima Nova Semibold;
+  src: url("ProximaNova-Semibold.356b5311.ttf") format("truetype");
+}
+
+@font-face {
   font-family: century gothic bold;
-  src: url("CenturyGothic-Bold.bed33c38.ttf") format("opentype"), url("CenturyGothic-Bold.bed33c38.ttf") format("truetype");
+  src: url("CenturyGothic-Bold.bed33c38.ttf") format("truetype");
 }
 
 body {
@@ -150,6 +155,10 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
+}
+
+body.no-scroll {
+  overflow: hidden;
 }
 
 *, :before, :after {
@@ -197,6 +206,10 @@ section {
   padding-top: 100px;
 }
 
+svg {
+  height: auto;
+}
+
 h1 {
   font-family: Proxima Nova Black, sans-serif;
 }
@@ -227,6 +240,10 @@ a {
 
 address {
   font-style: normal;
+}
+
+.previewSection {
+  height: 100vh;
 }
 
 .container {
@@ -513,6 +530,11 @@ address {
   margin-right: 50px;
 }
 
+.nav__link {
+  font-family: Proxima Nova Semibold, sans-serif;
+  line-height: 1.25;
+}
+
 .header__contacts {
   display: flex;
 }
@@ -538,14 +560,71 @@ address {
   font-weight: 400;
 }
 
+.header__phoneNumbers {
+  z-index: 2;
+  position: relative;
+}
+
+.header__number {
+  font-family: Proxima Nova Extra Bold, sans-serif;
+  font-size: 26px;
+}
+
+.header__phonesThumb {
+  gap: 8px;
+  width: 236px;
+  height: 33px;
+  position: relative;
+}
+
+.header__phonesThumb ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.arrowButton {
+  border: 1px solid #333;
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+
 .hero {
+  background-color: #fdfdf7;
+  background-repeat: no-repeat;
+  background-size: contain;
   padding-bottom: 47px;
+}
+
+.hero__swiper {
+  z-index: 2;
+  position: relative;
+}
+
+.swiper-pagination-bullet {
+  background-image: url("bullet.decb2b89.svg");
+  width: 16px;
+  height: 16px;
+}
+
+.swiper-pagination-bullet-active {
+  background-image: url("bulletActive.02f4de81.svg");
+  width: 16px;
+  height: 16px;
 }
 
 .hero__card {
   width: 1063px;
   height: 583px;
   font-weight: 700;
+}
+
+.swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
 }
 
 .hero__title {
@@ -559,8 +638,7 @@ address {
 }
 
 .hero__firstImage {
-  z-index: -2;
-  background-image: url("hero_first_img.5701c15e.svg");
+  background-image: url("hero_first_img.508a0f0c.svg");
   background-repeat: no-repeat;
   background-size: contain;
   width: 729.044px;
@@ -571,8 +649,7 @@ address {
 }
 
 .hero__secondImage {
-  z-index: -1;
-  background-image: url("hero_second_img.23e1e11e.svg");
+  background-image: url("hero_second_img.3d7f5419.svg");
   background-repeat: no-repeat;
   background-size: contain;
   width: 667px;
@@ -580,6 +657,17 @@ address {
   position: absolute;
   top: 234px;
   right: 75px;
+}
+
+.hero__bubbles {
+  background-image: url("heroCardBackground.022687d7.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 1283px;
+  height: 615px;
+  position: absolute;
+  top: 137px;
+  left: 0;
 }
 
 .hero__learmMoreBtn {
@@ -591,11 +679,31 @@ address {
 
 .hero__learmMoreBtn span {
   margin-bottom: 16px;
+  font-family: Proxima Nova Bold, sans-serif;
+  font-size: 14px;
 }
 
-.hero__learmMoreBtn svg {
+.hero_learmMoreIcon {
   width: 18px;
   height: 28px;
+}
+
+.learmMoreIcon_animation {
+  animation: 2s infinite learnMore;
+}
+
+@keyframes learnMore {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .checking__block {
@@ -628,6 +736,10 @@ address {
 .checking__list::-webkit-scrollbar-thumb {
   background-color: #ffd00e;
   border-radius: 5px;
+}
+
+.checking__list::-webkit-scrollbar-track {
+  background: var(--greyscale-100, #f9f9f9);
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -667,9 +779,6 @@ address {
 }
 
 .advertising__img {
-  background-image: url("advertising_img.bb9a6530.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
   width: 646px;
   height: 427px;
 }
@@ -1007,12 +1116,13 @@ address {
   border: 2px solid #454d520d;
   border-radius: 10px;
   width: 570px;
-  min-height: 211px;
   padding: 20px 30px 30px;
 }
 
 .impact__secondaryTitle {
+  font-family: Proxima Nova Semibold, sans-serif;
   font-size: 20px;
+  font-weight: 600;
 }
 
 .impact__card:not(:last-of-type) {
@@ -1024,8 +1134,15 @@ address {
   line-height: 1.25;
 }
 
-.impact__icon {
-  display: inline;
+.impact__card:not(:nth-child(2)) {
+  background-image: url("half_circle.e97c608c.svg");
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.impact__card:nth-child(2) {
+  background: linear-gradient(132deg, #ffdf001a 0%, #ffb8001a 100%);
 }
 
 .partners__swiper-thumb {
@@ -1075,7 +1192,7 @@ address {
   display: flex;
 }
 
-.charity__title {
+.charity__maintitle {
   margin-bottom: 75px;
 }
 
@@ -1132,12 +1249,13 @@ address {
   flex-basis: calc(33.3333% - 20px);
   margin-bottom: 30px;
   margin-right: 30px;
+  transition: all .5s ease-in;
 }
 
 .charity__item a {
   width: 100%;
   height: 100%;
-  padding: 36px 24px;
+  padding: 20px 11px;
   display: inline-block;
 }
 
@@ -1167,6 +1285,12 @@ address {
 .charity__title {
   margin-bottom: 16px;
   font-size: 26px;
+  line-height: 1.25;
+}
+
+.charity__itemText {
+  font-size: 16px;
+  line-height: 1.25;
 }
 
 .footer {

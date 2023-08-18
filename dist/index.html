@@ -9,17 +9,28 @@
     <link rel="stylesheet" href="/index.b07a87f3.css">
   </head>
   <body>
-    <header class="container header">
+    <div class="previewSection">
+      <header class="container header">
   <svg class="header__logo">
     <use href="/icons.81ed4e63.svg#icon-logo"></use>
   </svg>
   <nav>
     <ul class="header__nav">
-      <li class="header__nav_item"><a href="#">Чому ми</a></li>
-      <li class="header__nav_item"><a href="#">Партнери</a></li>
-      <li class="header__nav_item"><a href="#">Благодійність</a></li>
-      <li class="header__nav_item"><a href="#">Про нас</a></li>
-      <li class="header__nav_item"><a href="#">Drupal</a></li>
+      <li class="header__nav_item">
+        <a class="nav__link" href="#benefits">Чому ми</a>
+      </li>
+      <li class="header__nav_item">
+        <a class="nav__link" href="#partners">Партнери</a>
+      </li>
+      <li class="header__nav_item">
+        <a class="nav__link" href="#charity">Благодійність</a>
+      </li>
+      <li class="header__nav_item">
+        <a class="nav__link" href="#advertising">Про нас</a>
+      </li>
+      <li class="header__nav_item">
+        <a class="nav__link" href="#drupal">Drupal</a>
+      </li>
     </ul>
   </nav>
 
@@ -43,34 +54,78 @@
     </ul>
     <div class="header__phoneNumbers">
       <span class="header__schedule">Пн-Пт з 10 до 18</span>
-      <ul>
-        <li><a href="tel:0 (800) 759-759">0 (800) 759-759</a></li>
-        <li><a href="tel:0 (800) 759-758">0 (800) 759-758</a></li>
-      </ul>
+      <div class="header__phonesThumb">
+        <ul>
+          <li>
+            <a class="header__number" href="tel:0 (800) 759-759">0 (800) 759-759</a>
+          </li>
+          <li>
+            <a class="header__number" href="tel:0 (800) 759-758">0 (800) 759-758</a>
+          </li>
+        </ul>
+        <button class="arrowButton" type="button">
+          <svg class="arrowIcon" width="24" height="24">
+            <use href="/icons.81ed4e63.svg#arrowDown"></use>
+          </svg>
+        </button>
+      </div>
     </div>
   </div>
 </header>
 
-    <section class="container hero">
-  <div class="hero__card">
-    <p>Вебстудія №1 з розробки сайтів</p>
-    <h1 class="hero__title">Приєднуйтесь до нашої IT-команди</h1>
-    <p class="hero__legend">
-      Відкрийте нові перспективи кар'єрного зростання, приєднавшись до нашої
-      інноваційної IT-команди, яка відкриває двері до безмежних можливостей
-    </p>
-    <button type="button" class="main_btn">Спробуй свої сили</button>
+      <section class="container hero">
+  <h3 class="hero__secondaryTitle">Вебстудія №1 з розробки сайтів</h3>
+  <div class="hero__swiper swiper swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="hero__card">
+          <h1 class="hero__title">Приєднуйтесь до нашої IT-команди</h1>
+          <p class="hero__legend">
+            Відкрийте нові перспективи кар'єрного зростання, приєднавшись до
+            нашої інноваційної IT-команди, яка відкриває двері до безмежних
+            можливостей
+          </p>
+          <button type="button" class="main_btn">Спробуй свої сили</button>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="hero__card">
+          <h1 class="hero__title">Приєднуйтесь до нашої IT-команди</h1>
+          <p class="hero__legend">
+            Відкрийте нові перспективи кар'єрного зростання, приєднавшись до
+            нашої інноваційної IT-команди, яка відкриває двері до безмежних
+            можливостей
+          </p>
+          <button type="button" class="main_btn">Спробуй свої сили</button>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="hero__card">
+          <h1 class="hero__title">Приєднуйтесь до нашої IT-команди</h1>
+          <p class="hero__legend">
+            Відкрийте нові перспективи кар'єрного зростання, приєднавшись до
+            нашої інноваційної IT-команди, яка відкриває двері до безмежних
+            можливостей
+          </p>
+          <button type="button" class="main_btn">Спробуй свої сили</button>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
   </div>
+
   <button class="hero__learmMoreBtn">
     <span>Дізнатися більше</span>
-    <svg>
+    <svg class="hero_learmMoreIcon learmMoreIcon_animation">
       <use href="/icons.81ed4e63.svg#icon-Arrow"></use>
     </svg>
   </button>
+  <div class="hero__bubbles"></div>
   <div class="hero__firstImage"></div>
   <div class="hero__secondImage"></div>
 </section>
 
+    </div>
     <section class="container checking">
   <h2>Перевірка тествого завдання</h2>
   <div class="checking__block">
@@ -82,52 +137,70 @@
     </picture>
     <ul class="checking__list">
       <li>
-        Ми цінуємо ваш час та зусилля, тому намагаємося забезпечити оперативну
-        відповідь на ваші тестові роботи. Наша команда керівників та
-        співробітників займається перевіркою усіх робіт ВРУЧНУ перевіряє всі
-        роботи, гарантуючи високу якість оцінки.
+        <p>
+          Ми цінуємо ваш час та зусилля, тому намагаємося забезпечити оперативну
+          відповідь на ваші тестові роботи. Наша команда керівників та
+          співробітників займається перевіркою усіх робіт ВРУЧНУ перевіряє всі
+          роботи, гарантуючи високу якість оцінки.
+        </p>
       </li>
       <li>
-        <strong>
-          На першому етапі вашу роботу перевірить керівник HR-відділу — Олена,
-          або Анатолій Валерійович — керівник вебстудії Глянець.
-        </strong>
+        <p>
+          <strong>
+            На першому етапі вашу роботу перевірить керівник HR-відділу — Олена,
+            або Анатолій Валерійович — керівник вебстудії Глянець.
+          </strong>
+        </p>
       </li>
       <li>
-        Перевірку другого етапу, в залежності від посади на яку ви претендуєте,
-        буде здійснювати керівник відповідного відділу (наприклад, керівник
-        відділу верстки у разі подання заявки на посаду верстальника).
+        <p>
+          Перевірку другого етапу, в залежності від посади на яку ви
+          претендуєте, буде здійснювати керівник відповідного відділу
+          (наприклад, керівник відділу верстки у разі подання заявки на посаду
+          верстальника).
+        </p>
       </li>
       <li>
-        Ми розуміємо, як важливо для вас отримати швидку відповідь, тому
-        перевіряємо ваші <b>тестові завдання</b> навіть після завершення
-        робочого дня. Наша команда цінує кожного потенційного кандидата і робить
-        усе можливе, щоб забезпечити ретельну оцінку ваших здібностей та швидко
-        повідомити результат.
+        <p>
+          Ми розуміємо, як важливо для вас отримати швидку відповідь, тому
+          перевіряємо ваші <b>тестові завдання</b> навіть після завершення
+          робочого дня. Наша команда цінує кожного потенційного кандидата і
+          робить усе можливе, щоб забезпечити ретельну оцінку ваших здібностей
+          та швидко повідомити результат.
+        </p>
       </li>
       <li>
-        Ми цінуємо ваш час та зусилля, тому намагаємося забезпечити оперативну
-        відповідь на ваші тестові роботи. Наша команда керівників та
-        співробітників займається перевіркою усіх робіт ВРУЧНУ перевіряє всі
-        роботи, гарантуючи високу якість оцінки.
+        <p>
+          Ми цінуємо ваш час та зусилля, тому намагаємося забезпечити оперативну
+          відповідь на ваші тестові роботи. Наша команда керівників та
+          співробітників займається перевіркою усіх робіт ВРУЧНУ перевіряє всі
+          роботи, гарантуючи високу якість оцінки.
+        </p>
       </li>
       <li>
-        <strong>
-          На першому етапі вашу роботу перевірить керівник HR-відділу — Олена,
-          або Анатолій Валерійович — керівник вебстудії Глянець.
-        </strong>
+        <p>
+          <strong>
+            На першому етапі вашу роботу перевірить керівник HR-відділу — Олена,
+            або Анатолій Валерійович — керівник вебстудії Глянець.
+          </strong>
+        </p>
       </li>
       <li>
-        Перевірку другого етапу, в залежності від посади на яку ви претендуєте,
-        буде здійснювати керівник відповідного відділу (наприклад, керівник
-        відділу верстки у разі подання заявки на посаду верстальника).
+        <p>
+          Перевірку другого етапу, в залежності від посади на яку ви
+          претендуєте, буде здійснювати керівник відповідного відділу
+          (наприклад, керівник відділу верстки у разі подання заявки на посаду
+          верстальника).
+        </p>
       </li>
       <li>
-        Ми розуміємо, як важливо для вас отримати швидку відповідь, тому
-        перевіряємо ваші <b>тестові завдання</b> навіть після завершення
-        робочого дня. Наша команда цінує кожного потенційного кандидата і робить
-        усе можливе, щоб забезпечити ретельну оцінку ваших здібностей та швидко
-        повідомити результат.
+        <p>
+          Ми розуміємо, як важливо для вас отримати швидку відповідь, тому
+          перевіряємо ваші <b>тестові завдання</b> навіть після завершення
+          робочого дня. Наша команда цінує кожного потенційного кандидата і
+          робить усе можливе, щоб забезпечити ретельну оцінку ваших здібностей
+          та швидко повідомити результат.
+        </p>
       </li>
     </ul>
   </div>
@@ -156,29 +229,29 @@
         </ul>
         <ul class="advertising__partnersList">
           <li>
-            <svg class="advertising__partnersListItem">
-              <use href="/partner1.2424fd90.svg"></use>
+            <svg width="105px" height="65px" class="advertising__partnersListItem">
+              <use href="/icons.81ed4e63.svg#ukraineCommunitys"></use>
             </svg>
           </li>
           <li>
-            <svg class="advertising__partnersListItem">
-              <use href="/partner2.82011b01.svg"></use>
+            <svg width="219px" height="66px" class="advertising__partnersListItem">
+              <use href="/icons.81ed4e63.svg#impactIcon3"></use>
             </svg>
           </li>
           <li>
             <svg width="200px" height="66px" class="advertising__partnersListItem">
-              <use href="/partner3.c52b3bd2.svg"></use>
+              <use href="/icons.81ed4e63.svg#helpdesk_black"></use>
             </svg>
           </li>
         </ul>
       </div>
-      <div class="advertising__img"></div>
+      <img class="advertising__img" src="/advertising_img.bb9a6530.svg" alt="people are learning programming">
     </div>
     <div class="backgroundFigure"></div>
   </div>
 </section>
 
-    <section class="container benefits" id="benefist">
+    <section class="container benefits" id="benefits">
   <h2>У нас</h2>
   <div class="benefits__box">
     <ul class="benefits__firstList">
@@ -270,7 +343,7 @@
     <div class="benefits__mainLogo"></div>
   </div>
   <div class="swiper-thumb">
-    <div class="swiper swiper-container">
+    <div class="benefits__swiper swiper swiper-container">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <img src="/image1-min.277aba61.jpg" alt="веб студія Глянець">
@@ -317,7 +390,7 @@
   <h2>Наш вклад в Drupal</h2>
   <ul class="impact__list">
     <li class="impact__card">
-      <svg width="226" hight="46" class="impact__icon">
+      <svg width="226px" height="46px" class="impact__icon">
         <use href="/icons.81ed4e63.svg#impactIcon1"></use>
       </svg>
       <h3 class="impact__secondaryTitle">
@@ -330,7 +403,7 @@
       </p>
     </li>
     <li class="impact__card">
-      <svg width="152" hight="46" class="impact__icon">
+      <svg width="92px" height="46px" class="impact__icon">
         <use href="/icons.81ed4e63.svg#impactIcon2"></use>
       </svg>
       <h3 class="impact__secondaryTitle">Робимо вклад в Open Source</h3>
@@ -341,7 +414,7 @@
       </p>
     </li>
     <li class="impact__card">
-      <svg width="92" hight="46" class="impact__icon">
+      <svg width="152px" height="46px" class="impact__icon">
         <use href="/icons.81ed4e63.svg#impactIcon3"></use>
       </svg>
       <h3 class="impact__secondaryTitle">
@@ -357,10 +430,10 @@
   </ul>
 </section>
 
-    <section class="container">
+    <section class="container" id="partners">
   <h2>З нами працюють:</h2>
   <div class="partners__swiper-thumb">
-    <div class="partners__swiper swiper-container">
+    <div class="partners__swiper swiper swiper-container">
       <div class="swiper-wrapper">
         <div class="partners__item swiper-slide">
           <svg width="138" height="100">
@@ -442,7 +515,7 @@
     <section class="container charity" id="charity">
   <div class="charity__thumb">
     <div class="charity__legend">
-      <h2 class="charity__title">Благодійність</h2>
+      <h2 class="charity__maintitle">Благодійність</h2>
       <strong class="charity__boldText">Наша місія — зробити світ кращим, і ми віримо, що благодійність є одним
         з ключових інструментів для досягнення цієї мети.</strong>
       <p>
@@ -518,7 +591,7 @@
           <use href="/icons.81ed4e63.svg#trident"></use>
         </svg>
         <h3 class="charity__title">Допомога ЗСУ</h3>
-        <p>
+        <p class="charity__itemText">
           Наші герої потребують уваги та підтримки, тому будь-яка допомога,
           навіть найменша, важлива. Разом — ми сила!
         </p>
@@ -529,8 +602,8 @@
         <svg class="charity__icon">
           <use href="/icons.81ed4e63.svg#cable"></use>
         </svg>
-        <h3>Пункт незламності</h3>
-        <p>
+        <h3 class="charity__title">Пункт незламності</h3>
+        <p class="charity__itemText">
           Восени 2022 року, коли країна перебувала під загрозою блекауту, ми
           добровільно облаштували “Пункт незламності” в нашому офісі.
         </p>
@@ -542,7 +615,7 @@
           <use href="/icons.81ed4e63.svg#computer"></use>
         </svg>
         <h3 class="charity__title">Компʼютерний клас</h3>
-        <p>
+        <p class="charity__itemText">
           Здійснили повне оновлення комп'ютерного класу у КЗ "Зарванецька
           гімназія". Цей проєкт був частиною соціальної відповідальності та
           прагнення покращити освітні умови для молодого покоління.
@@ -557,7 +630,7 @@
         <h3 class="charity__title">
           Стерилізація і вакцинація місцевих тварин
         </h3>
-        <p>
+        <p class="charity__itemText">
           Стерилізація допомагає контролювати розмноження безпритульних тварин
           та зменшити їх кількість в майбутньому.
         </p>
@@ -569,7 +642,7 @@
           <use href="/icons.81ed4e63.svg#broom"></use>
         </svg>
         <h3 class="charity__title">Прибирання “Чижової посадки”</h3>
-        <p>
+        <p class="charity__itemText">
           Минулого року була проведена екологічна акція прибирання лісового
           масиву “Чижова посадка”. За участю добровольців було зібрано близько
           ста мішків сміття, яке вивозили трьома вантажівками.
@@ -582,7 +655,7 @@
           <use href="/icons.81ed4e63.svg#learning"></use>
         </svg>
         <h3 class="charity__title">Додаткові проєкти</h3>
-        <p>
+        <p class="charity__itemText">
           Одним із наступних проєктів, який вже невдовзі буде реалізовано –
           будиночки для безкоштовного обміну дитячою літературою. Його задум має
           назву "Читацький клуб".
@@ -621,24 +694,31 @@
           <li class="footer__contactsItem">
             <ul class="footer__socialLinksList">
               <li>
-                <svg width="22" height="22">
-                  <use href="/icons.81ed4e63.svg#icon-facebook-2"></use>
-                </svg>
+                <a href="https://www.facebook.com/">
+                  <svg width="22" height="22">
+                    <use href="/icons.81ed4e63.svg#icon-facebook-2"></use>
+                  </svg>
+                </a>
               </li>
               <li>
-                <svg width="22" height="22">
-                  <use href="/icons.81ed4e63.svg#icon-instagram-2"></use>
-                </svg>
+                <a href="https://www.instagram.com/"><svg width="22" height="22">
+                    <use href="/icons.81ed4e63.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
               </li>
               <li>
-                <svg width="32" height="32">
-                  <use href="/icons.81ed4e63.svg#icon-google-plus"></use>
-                </svg>
+                <a href="https://www.google.com/">
+                  <svg width="32" height="32">
+                    <use href="/icons.81ed4e63.svg#icon-google-plus"></use>
+                  </svg>
+                </a>
               </li>
               <li>
-                <svg width="22" height="22">
-                  <use href="/icons.81ed4e63.svg#icon-twitter"></use>
-                </svg>
+                <a href="https://twitter.com/">
+                  <svg width="22" height="22">
+                    <use href="/icons.81ed4e63.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </li>
@@ -684,7 +764,10 @@
 </footer>
 
     
+
     <script src="/index.18dbc454.js" defer=""></script>
+    <script src="/index.993cf04e.js" defer=""></script>
     <script src="/index.2b7978b7.js" defer=""></script>
+    <script src="/index.3473315a.js" defer=""></script>
   </body>
 </html>

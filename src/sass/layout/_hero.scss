@@ -1,5 +1,23 @@
 .hero {
   padding-bottom: 47px;
+  background-color: $hero_bg;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.hero__swiper {
+  position: relative;
+  z-index: 2;
+}
+.swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+  background-image: url('../assets/images/hero/bullet.svg');
+}
+.swiper-pagination-bullet-active {
+  width: 16px;
+  height: 16px;
+  background-image: url('../assets/images/hero/bulletActive.svg');
 }
 
 .hero__card {
@@ -7,7 +25,10 @@
   height: 583px;
   font-weight: 700;
 }
-
+.swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+}
 .hero__title {
   font-size: 90px;
   line-height: 1.1;
@@ -20,10 +41,9 @@
   position: absolute;
   width: 729.044px;
   height: 809.146px;
-  z-index: -2;
   top: 200px;
   right: 0;
-  background-image: url('../assets/images/hero_first_img.svg');
+  background-image: url('../assets/images/hero/hero_first_img.svg');
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -31,10 +51,19 @@
   position: absolute;
   width: 667px;
   height: 654px;
-  z-index: -1;
   top: 234px;
   right: 75px;
-  background-image: url('../assets/images/hero_second_img.svg');
+  background-image: url('../assets/images/hero/hero_second_img.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.hero__bubbles {
+  position: absolute;
+  width: 1283px;
+  height: 615px;
+  top: 137px;
+  left: 0;
+  background-image: url('../assets/images/hero/heroCardBackground.svg');
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -47,8 +76,25 @@
 }
 .hero__learmMoreBtn span {
   margin-bottom: 16px;
+  font-family: 'Proxima Nova Bold', sans-serif;
+  font-size: 14px;
 }
-.hero__learmMoreBtn svg {
+.hero_learmMoreIcon {
   width: 18px;
   height: 28px;
+}
+.learmMoreIcon_animation {
+  animation: learnMore 2s infinite;
+}
+
+@keyframes learnMore {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }

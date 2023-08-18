@@ -6,9 +6,10 @@
   display: flex;
   justify-content: space-between;
 }
-.charity__title {
+.charity__maintitle {
   margin-bottom: 75px;
 }
+
 .charity__legend {
   max-width: 750px;
 }
@@ -54,12 +55,13 @@
   margin-bottom: 30px;
   border-radius: 10px;
   text-align: center;
+  transition: all 500ms ease-in;
 }
 .charity__item a {
   display: inline-block;
   width: 100%;
   height: 100%;
-  padding: 36px 24px;
+  padding: 20px 11px;
 }
 .charity__item p {
   font-weight: 16px;
@@ -84,4 +86,9 @@
 .charity__title {
   margin-bottom: 16px;
   font-size: 26px;
+  line-height: 1.25;
+}
+.charity__itemText {
+  font-size: 16px;
+  line-height: 1.25;
 }

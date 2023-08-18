@@ -16,6 +16,10 @@
 .header__nav_item:not(:last-of-type) {
   margin-right: 50px;
 }
+.nav__link {
+  font-family: 'Proxima Nova Semibold', sans-serif;
+  line-height: 1.25;
+}
 .header__contacts {
   display: flex;
 }
@@ -37,4 +41,31 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
+}
+.header__phoneNumbers {
+  position: relative;
+  z-index: 2;
+}
+.header__number {
+  font-size: 26px;
+  font-family: 'Proxima Nova Extra Bold', sans-serif;
+}
+.header__phonesThumb {
+  position: relative;
+  width: 236px;
+  height: 33px;
+  gap: 8px;
+}
+.header__phonesThumb ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.arrowButton {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  width: 26px;
+  height: 26px;
+  border: 1px solid $primary_black;
 }

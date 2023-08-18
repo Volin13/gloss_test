@@ -3,13 +3,14 @@
 }
 .impact__card {
   width: 570px;
-  min-height: 211px;
   border-radius: 10px;
   border: 2px solid rgba(69, 77, 82, 0.05);
   padding: 20px 30px 30px;
 }
 .impact__secondaryTitle {
   font-size: 20px;
+  font-family: 'Proxima Nova Semibold', sans-serif;
+  font-weight: 600;
 }
 .impact__card:not(:last-of-type) {
   margin-right: 30px;
@@ -18,6 +19,18 @@
   font-size: 16px;
   line-height: 1.25;
 }
-.impact__icon {
-  display: inline;
+
+.impact__card:not(:nth-child(2)) {
+  background-image: url('../assets/images/impact/half_circle.svg');
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.impact__card:nth-child(2) {
+  background: linear-gradient(
+    132deg,
+    rgba(255, 223, 0, 0.1) 0%,
+    rgba(255, 184, 0, 0.1) 100%
+  );
 }

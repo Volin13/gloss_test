@@ -579,7 +579,7 @@ var _swiper = require("swiper");
 var _swiperDefault = parcelHelpers.interopDefault(_swiper);
 var _modules = require("swiper/modules");
 // Now you can use Swiper
-const swiper = new (0, _swiperDefault.default)(".swiper", {
+const swiper = new (0, _swiperDefault.default)(".benefits__swiper", {
     speed: 500,
     direction: "horizontal",
     grabCursor: true,

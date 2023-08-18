@@ -25,7 +25,9 @@
   background-color: $primary_yellow;
   border-radius: 5px;
 }
-
+.checking__list::-webkit-scrollbar-track {
+  background: var(--greyscale-100, #f9f9f9);
+}
 /* Customize the thumb on hover */
 ::-webkit-scrollbar-thumb:hover {
   background-color: $secondary_yellow;
