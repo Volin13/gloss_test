@@ -7,11 +7,6 @@
   line-height: 1.25;
   margin-bottom: 50px;
 }
-// .benefits__firstList,
-// .benefits__secondList {
-//  height: ;
-// }
-
 .benefits__firstList {
   text-align: end;
 }
@@ -126,6 +121,7 @@ $marginSecond: 0, 133, 166, 134, 0;
   position: absolute;
   z-index: 2;
   transform: translateY(-50%);
+  cursor: pointer;
 }
 .swiper-button-prev {
   left: -28px;
@@ -134,4 +130,14 @@ $marginSecond: 0, 133, 166, 134, 0;
 .swiper-button-next {
   right: -28px;
   top: 50%;
+}
+.bg__figure2 {
+  position: absolute;
+  width: 614px;
+  height: 681px;
+  background-image: url('../assets/images/bg/bg__charity.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  right: 0;
+  top: 4000px;
 }

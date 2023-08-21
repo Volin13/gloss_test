@@ -1,16 +1,17 @@
 import Swiper from 'swiper';
-import { Mousewheel, Pagination } from 'swiper/modules';
+import { Mousewheel, Pagination, Autoplay } from 'swiper/modules';
 // Now you can use Swiper
 const heroSwiper = new Swiper('.hero__swiper', {
   speed: 500,
   direction: 'horizontal',
   grabCursor: true,
   mousewheel: true,
-  modules: [Mousewheel, Pagination],
+  modules: [Mousewheel, Pagination, Autoplay],
   loop: true,
   slidesPerView: 1,
   autoplay: {
-    delay: 3000,
+    delay: 5000,
+    pauseOnMouseEnter: true,
   },
   breakpoints: {
     320: {

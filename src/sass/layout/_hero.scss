@@ -9,12 +9,21 @@
   position: relative;
   z-index: 2;
 }
+.swiper-pagination {
+  margin-bottom: 7px;
+}
 .swiper-pagination-bullet {
+  display: inline-block;
   width: 16px;
   height: 16px;
   background-image: url('../assets/images/hero/bullet.svg');
 }
+.swiper-pagination-bullet:not(:last-of-type) {
+  margin-right: 17px;
+}
+
 .swiper-pagination-bullet-active {
+  display: inline-block;
   width: 16px;
   height: 16px;
   background-image: url('../assets/images/hero/bulletActive.svg');
@@ -56,6 +65,7 @@
   background-image: url('../assets/images/hero/hero_second_img.svg');
   background-repeat: no-repeat;
   background-size: contain;
+  animation: flyingMan 20s infinite;
 }
 .hero__bubbles {
   position: absolute;
@@ -85,6 +95,24 @@
 }
 .learmMoreIcon_animation {
   animation: learnMore 2s infinite;
+}
+
+@keyframes flyingMan {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(20px, 20px);
+  }
+  50% {
+    transform: translate(0px, -40px);
+  }
+  75% {
+    transform: translate(-40px, 0px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
 
 @keyframes learnMore {

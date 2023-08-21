@@ -1,6 +1,5 @@
-const phoneNumbersListEl = document.querySelector('.header__phoneNumbers ul');
+const phoneNumbersListEl = document.querySelector('.header__phonesThumb ul');
 const phoneListButton = document.querySelector('.arrowButton');
-const phoneListBtnIcon = document.querySelector('.arrowIcon use');
 const toggleBodyHeightButton = document.querySelector('.hero__learmMoreBtn');
 const limitedSection = document.querySelector('.previewSection');
 
@@ -35,7 +34,7 @@ function handleArrowClick() {
 }
 
 function updateListDisplay() {
-  if (clickedPhoneArrow) {
+  if (!clickedPhoneArrow) {
     phoneNumbersListEl.style.height = '33px';
     phoneNumbersListEl.style.overflow = 'hidden';
   } else {
@@ -45,10 +44,13 @@ function updateListDisplay() {
 }
 
 function updateArrowIcon() {
-  const iconHref = clickedPhoneArrow
-    ? './assets/images/icons.svg#arrowDown'
-    : './assets/images/icons.svg#arrowUp';
-  phoneListBtnIcon.setAttribute('href', iconHref);
+  if (phoneListButton.classList.contains('arrowDown')) {
+    phoneListButton.classList.remove('arrowDown');
+    phoneListButton.classList.add('arrowUp');
+  } else {
+    phoneListButton.classList.remove('arrowUp');
+    phoneListButton.classList.add('arrowDown');
+  }
 }
 
 toggleBodyHeightButton.addEventListener('click', toggleSectionHeight);

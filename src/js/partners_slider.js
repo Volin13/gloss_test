@@ -20,7 +20,7 @@ const swiper2 = new Swiper('.partners__swiper', {
     1280: {
       slidesPerView: 6,
       spaceBetween: 30,
-      height: 150,
+      height: 155,
     },
   },
   navigation: {

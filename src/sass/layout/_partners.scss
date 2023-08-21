@@ -20,6 +20,7 @@
   position: absolute;
   z-index: 2;
   transform: translateY(-50%);
+  cursor: pointer;
 }
 .partners-swiper-button-prev {
   left: -28px;
@@ -28,4 +29,8 @@
 .partners-swiper-button-next {
   right: -28px;
   top: 50%;
+}
+.swiper {
+  overflow: visible;
+  overflow-x: clip;
 }

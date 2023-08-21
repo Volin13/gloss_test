@@ -47,7 +47,7 @@
 .footer__contactBox {
   padding: 50px 105px 155px 120px;
 }
-.header__logo {
+.footer__logo {
   margin-bottom: 30px;
 }
 .footer__contactBox {
@@ -74,6 +74,9 @@
 }
 .footer__addressItem:not(:last-of-type) {
   margin-bottom: 20px;
+}
+.footer__addressItem_underlinedText {
+  text-decoration: underline;
 }
 .footer__addressList {
   max-width: 297px;

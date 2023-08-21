@@ -16,12 +16,28 @@
 .header__nav_item:not(:last-of-type) {
   margin-right: 50px;
 }
+.header__nav_item:not(:last-of-type)::after {
+  content: '';
+  display: inline-block;
+  stroke: $primary_black;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 20px;
+  margin-left: 50px;
+  opacity: 0.1;
+  background-color: $primary_black;
+}
+
 .nav__link {
   font-family: 'Proxima Nova Semibold', sans-serif;
+  font-weight: 600;
   line-height: 1.25;
 }
 .header__contacts {
   display: flex;
+  align-items: flex-end;
 }
 
 .header__socialMedia {
@@ -60,6 +76,8 @@
   position: absolute;
   top: 0;
   left: 0;
+  overflow: hidden;
+  height: 33px;
 }
 .arrowButton {
   position: absolute;
@@ -68,4 +86,17 @@
   width: 26px;
   height: 26px;
   border: 1px solid $primary_black;
+}
+
+.arrowDown {
+  background-image: url('../assets/images/header/arrowDown.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.arrowUp {
+  background-image: url('../assets/images/header/arrowUp.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }

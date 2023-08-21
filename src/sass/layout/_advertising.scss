@@ -29,14 +29,91 @@
 .advertising__partnersList li:not(:last-of-type) {
   margin-right: 50px;
 }
-.advertising__img {
+.advertising__mainImg {
+  position: relative;
   width: 646px;
   height: 427px;
+  background-image: url('../assets/images/advertising/mainImg2.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
 }
-// .advertising__partnersListItem {
-//     height: 66px;
-//     width: 300px;
-//   }
+.advertising__gear1 {
+  position: absolute;
+  z-index: 2;
+  top: 105px;
+  left: 290px;
+  width: 77px;
+  height: 76px;
+  background-image: url('../assets/images/advertising/gear1.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: spinRight 5s linear infinite;
+}
+.advertising__gear2 {
+  position: absolute;
+  z-index: 2;
+  top: 170px;
+  left: 360px;
+  width: 50px;
+  height: 51px;
+  background-image: url('../assets/images/advertising/gear2.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: spinRight 4s linear infinite;
+}
+.advertising__gear3 {
+  position: absolute;
+  z-index: 2;
+  top: 45px;
+  left: 373px;
+  width: 128px;
+  height: 135px;
+  background-image: url('../assets/images/advertising/gear3.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: spinLeft 5s linear infinite;
+}
+.advertising__gear4 {
+  position: absolute;
+  top: 130px;
+  right: 25px;
+  width: 74px;
+  height: 78px;
+  background-image: url('../assets/images/advertising/gear4.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: spinLeft 12s linear infinite;
+}
+.advertising__gear5 {
+  position: absolute;
+  top: 10px;
+  left: 135px;
+  width: 118px;
+  height: 120px;
+  background-image: url('../assets/images/advertising/gear5.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  animation: spinRight 15s linear infinite;
+}
+
+@keyframes spinRight {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spinLeft {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}
 
 .backgroundFigure {
   position: absolute;
