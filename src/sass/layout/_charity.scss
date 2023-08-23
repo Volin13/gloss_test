@@ -11,7 +11,7 @@
 }
 
 .charity__legend {
-  max-width: 750px;
+  max-width: 40%;
 }
 .charity__boldText {
   margin-bottom: 10px;
@@ -56,6 +56,7 @@
   border-radius: 10px;
   text-align: center;
   transition: all 500ms ease-in;
+  background-color: $primary_white;
 }
 .charity__item a {
   display: inline-block;
@@ -101,5 +102,311 @@
   background-repeat: no-repeat;
   background-size: cover;
   right: 0;
+  z-index: -1;
   top: 5000px;
+}
+
+@media screen and (min-width: 375px) {
+}
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 990px) {
+  .charity {
+    padding-bottom: 100px;
+  }
+  .charity__thumb {
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .charity__maintitle {
+    margin-bottom: 75px;
+  }
+
+  .charity__legend {
+    max-width: 40%;
+  }
+  .charity__boldText {
+    margin-bottom: 10px;
+  }
+  .charity__images {
+    position: relative;
+    width: 877px;
+    min-height: 467px;
+  }
+  .charity__images img {
+    border-radius: 5px;
+    position: absolute;
+  }
+  .charity__firstImg {
+    width: 413px;
+    height: 347px;
+    top: 75px;
+    left: 0;
+    z-index: 2;
+  }
+  .charity__secondImg {
+    width: 375px;
+    height: 280px;
+    top: 187px;
+    right: 103px;
+    z-index: 3;
+  }
+  .charity__thirdImg {
+    width: 518px;
+    height: 352px;
+    top: 0;
+    right: 0;
+  }
+  .charity__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .charity__item {
+    flex-basis: calc((100% - 60px) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 500ms ease-in;
+    background-color: $primary_white;
+  }
+  .charity__item a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 20px 11px;
+  }
+  .charity__item p {
+    font-weight: 16px;
+    line-height: 1.25;
+  }
+  .charity__item:hover,
+  .charity__item:focus {
+    background-color: $primary_yellow;
+  }
+
+  .charity__item:nth-child(3n) {
+    margin-right: 0;
+  }
+  .charity__item:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }
+  .charity__icon {
+    margin-bottom: 16px;
+    width: 80px;
+    height: 80px;
+  }
+  .charity__title {
+    margin-bottom: 16px;
+    font-size: 26px;
+    line-height: 1.25;
+  }
+  .charity__itemText {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .bg__figure3 {
+    position: absolute;
+    width: 782px;
+    height: 699px;
+    background-image: url('../assets/images/bg/bg__charity.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    right: 0;
+    z-index: -1;
+    top: 5000px;
+  }
+}
+@media screen and (min-width: 1280px) {
+}
+@media screen and (min-width: 1440px) {
+  .charity {
+    padding-bottom: 60px;
+  }
+  .charity__thumb {
+    padding-bottom: 35px;
+    gap: 96px;
+  }
+  .charity__maintitle {
+    margin-bottom: 50px;
+  }
+
+  .charity__legend {
+    max-width: 40%;
+  }
+  .charity__boldText {
+    margin-bottom: 10px;
+  }
+  .charity__images {
+    width: 614px;
+    min-height: 327px;
+  }
+  .charity__images img {
+    border-radius: 5px;
+    position: absolute;
+  }
+  .charity__firstImg {
+    width: 290px;
+    height: 243px;
+    top: 50px;
+    left: 0;
+    z-index: 2;
+  }
+  .charity__secondImg {
+    width: 262px;
+    height: 196px;
+    top: 124px;
+    right: 69px;
+    z-index: 3;
+  }
+  .charity__thirdImg {
+    width: 363px;
+    height: 265px;
+    top: 0;
+    right: 0;
+  }
+  .charity__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .charity__item {
+    flex-basis: calc((100% - 60px) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 500ms ease-in;
+    background-color: $primary_white;
+  }
+  .charity__item a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 20px 20px;
+  }
+
+  .bg__figure3 {
+    position: absolute;
+    width: 520px;
+    height: 466px;
+    background-image: url('../assets/images/bg/bg__charity.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    right: 0;
+    z-index: -1;
+    top: 3587px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .charity {
+    padding-bottom: 100px;
+  }
+  .charity__thumb {
+    padding-bottom: 50px;
+    display: flex;
+    gap: 143px;
+    justify-content: space-between;
+  }
+  .charity__maintitle {
+    margin-bottom: 75px;
+  }
+
+  .charity__legend {
+    max-width: 750px;
+  }
+  .charity__boldText {
+    margin-bottom: 10px;
+  }
+  .charity__images {
+    position: relative;
+    width: 877px;
+    min-height: 467px;
+  }
+  .charity__images img {
+    border-radius: 5px;
+    position: absolute;
+  }
+  .charity__firstImg {
+    width: 413px;
+    height: 347px;
+    top: 75px;
+    left: 0;
+    z-index: 2;
+  }
+  .charity__secondImg {
+    width: 375px;
+    height: 280px;
+    top: 187px;
+    right: 103px;
+    z-index: 3;
+  }
+  .charity__thirdImg {
+    width: 518px;
+    height: 352px;
+    top: 0;
+    right: 0;
+  }
+  .charity__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .charity__item {
+    flex-basis: calc((100% - 60px) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 500ms ease-in;
+    background-color: $primary_white;
+  }
+  .charity__item a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 20px 11px;
+  }
+  .charity__item p {
+    font-weight: 16px;
+    line-height: 1.25;
+  }
+  .charity__item:hover,
+  .charity__item:focus {
+    background-color: $primary_yellow;
+  }
+
+  .charity__item:nth-child(3n) {
+    margin-right: 0;
+  }
+  .charity__item:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }
+  .charity__icon {
+    margin-bottom: 16px;
+    width: 80px;
+    height: 80px;
+  }
+  .charity__title {
+    margin-bottom: 16px;
+    font-size: 26px;
+    line-height: 1.25;
+  }
+  .charity__itemText {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .bg__figure3 {
+    position: absolute;
+    width: 782px;
+    height: 699px;
+    background-image: url('../assets/images/bg/bg__charity.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    right: 0;
+    z-index: -1;
+    top: 2000px;
+  }
 }

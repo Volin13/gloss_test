@@ -2,7 +2,7 @@
   display: flex;
 }
 .impact__card {
-  width: calc(100% - 60px) / 3;
+  width: calc((100% - 60px) / 3);
   border-radius: 10px;
   border: 2px solid rgba(69, 77, 82, 0.05);
   padding: 20px 30px 30px;
@@ -15,6 +15,9 @@
 .impact__card:not(:last-of-type) {
   margin-right: 30px;
 }
+.impact__icon {
+  margin-bottom: 15px;
+}
 .impact__text {
   font-size: 16px;
   line-height: 1.25;
@@ -22,6 +25,7 @@
 
 .impact__card:not(:nth-child(2)) {
   background-image: url('../assets/images/impact/half_circle.svg');
+  background-color: $primary_white;
   background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
@@ -29,8 +33,113 @@
 
 .impact__card:nth-child(2) {
   background: linear-gradient(
-    132deg,
-    rgba(255, 223, 0, 0.1) 0%,
-    rgba(255, 184, 0, 0.1) 100%
-  );
+      132deg,
+      rgba(255, 223, 0, 0.1) 0%,
+      rgba(255, 184, 0, 0.1) 100%
+    ),
+    $primary_white;
+}
+
+@media screen and (min-width: 375px) {
+}
+@media screen and (min-width: 768px) {
+  .impact__list {
+    display: flex;
+  }
+  .impact__card {
+    width: calc((100% - 60px) / 3);
+    border-radius: 10px;
+    border: 2px solid rgba(69, 77, 82, 0.05);
+    padding: 20px 30px 30px;
+  }
+  .impact__secondaryTitle {
+    font-size: 20px;
+    font-family: 'Proxima Nova Semibold', sans-serif;
+    font-weight: 600;
+  }
+  .impact__card:not(:last-of-type) {
+    margin-right: 30px;
+  }
+  .impact__icon {
+    margin-bottom: 15px;
+  }
+  .impact__text {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .impact__card:not(:nth-child(2)) {
+    background-image: url('../assets/images/impact/half_circle.svg');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .impact__card:nth-child(2) {
+    background: linear-gradient(
+      132deg,
+      rgba(255, 223, 0, 0.1) 0%,
+      rgba(255, 184, 0, 0.1) 100%
+    );
+  }
+}
+@media screen and (min-width: 990px) {
+}
+@media screen and (min-width: 1280px) {
+}
+@media screen and (min-width: 1440px) {
+  .impact__card {
+    width: calc((100% - 40px) / 3);
+    border-radius: 10px;
+    padding: 20px 20px 30px;
+  }
+  .impact__secondaryTitle {
+    font-size: 20px;
+  }
+  .impact__card:not(:last-of-type) {
+    margin-right: 20px;
+  }
+  .impact__text {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .impact__list {
+    display: flex;
+  }
+  .impact__card {
+    width: calc((100% - 60px) / 3);
+    border-radius: 10px;
+    border: 2px solid rgba(69, 77, 82, 0.05);
+    padding: 20px 20px 30px;
+    background-color: $primary_white;
+  }
+  .impact__secondaryTitle {
+    font-size: 20px;
+    font-family: 'Proxima Nova Semibold', sans-serif;
+    font-weight: 600;
+  }
+  .impact__card:not(:last-of-type) {
+    margin-right: 30px;
+  }
+  .impact__text {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .impact__card:not(:nth-child(2)) {
+    background: url('../assets/images/impact/half_circle.svg'), $primary_white;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .impact__card:nth-child(2) {
+    background: linear-gradient(
+      132deg,
+      rgba(255, 223, 0, 0.1) 0%,
+      rgba(255, 184, 0, 0.1) 100%
+    );
+  }
 }

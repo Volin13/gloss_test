@@ -183,3 +183,41 @@ address {
 .previewSection {
   height: 100vh;
 }
+
+@media screen and (min-width: 375px) {
+}
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 990px) {
+  body {
+    line-height: 1.5;
+    font-size: 14px;
+  }
+  h2 {
+    font-family: 'Proxima Nova Extra Bold', sans-serif;
+    font-size: 44px;
+    line-height: 1.25;
+    margin-bottom: 50px;
+  }
+}
+@media screen and (min-width: 1280px) {
+}
+@media screen and (min-width: 1440px) {
+  body {
+    line-height: 1.5;
+    font-size: 16px;
+  }
+  section {
+    padding-top: 60px;
+  }
+  h2 {
+    font-size: 30px;
+    margin-bottom: 35px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  body {
+    line-height: 1.5;
+    font-size: 20px;
+  }
+}

@@ -127,3 +127,215 @@
   z-index: -1;
   transform: rotate(57.235deg);
 }
+
+@media screen and (min-width: 375px) {
+}
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 990px) {
+  .advertising__list {
+    margin-bottom: 28px;
+  }
+  .advertising__list li:not(:last-of-type) {
+    margin-bottom: 15px;
+  }
+  .advertising__partnersList {
+    display: flex;
+  }
+  .advertising__partnersList li:not(:last-of-type) {
+    margin-right: 50px;
+  }
+  .advertising__mainImg {
+    position: relative;
+    width: 646px;
+    height: 427px;
+    background-image: url('../assets/images/advertising/mainImg2.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .advertising__gear1 {
+    position: absolute;
+    z-index: 2;
+    top: 105px;
+    left: 290px;
+    width: 77px;
+    height: 76px;
+    background-image: url('../assets/images/advertising/gear1.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: spinRight 5s linear infinite;
+  }
+  .advertising__gear2 {
+    position: absolute;
+    z-index: 2;
+    top: 170px;
+    left: 360px;
+    width: 50px;
+    height: 51px;
+    background-image: url('../assets/images/advertising/gear2.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: spinRight 4s linear infinite;
+  }
+  .advertising__gear3 {
+    position: absolute;
+    z-index: 2;
+    top: 45px;
+    left: 373px;
+    width: 128px;
+    height: 135px;
+    background-image: url('../assets/images/advertising/gear3.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: spinLeft 5s linear infinite;
+  }
+  .advertising__gear4 {
+    position: absolute;
+    top: 130px;
+    right: 25px;
+    width: 74px;
+    height: 78px;
+    background-image: url('../assets/images/advertising/gear4.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: spinLeft 12s linear infinite;
+  }
+  .advertising__gear5 {
+    position: absolute;
+    top: 10px;
+    left: 135px;
+    width: 118px;
+    height: 120px;
+    background-image: url('../assets/images/advertising/gear5.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: spinRight 15s linear infinite;
+  }
+}
+@media screen and (min-width: 1280px) {
+}
+@media screen and (min-width: 1440px) {
+  .advertising__list {
+    margin-bottom: 20px;
+  }
+  .advertising__list li:not(:last-of-type) {
+    margin-bottom: 10px;
+  }
+  .advertising__partnersList li:not(:last-of-type) {
+    margin-right: 35px;
+  }
+  .advertising__mainImg {
+    width: 452px;
+    height: 300px;
+  }
+  .advertising__gear1 {
+    top: 73px;
+    left: 203px;
+    width: 54px;
+    height: 50px;
+  }
+  .advertising__gear2 {
+    top: 119px;
+    left: 240px;
+    width: 35px;
+    height: 35px;
+  }
+  .advertising__gear3 {
+    top: 30px;
+    left: 250px;
+    width: 83px;
+    height: 90px;
+  }
+  .advertising__gear4 {
+    top: 83px;
+    right: 17px;
+    width: 50px;
+    height: 51px;
+  }
+  .advertising__gear5 {
+    top: 7px;
+    left: 90px;
+    width: 80px;
+    height: 80px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .advertising__list {
+    margin-bottom: 28px;
+  }
+  .advertising__list li:not(:last-of-type) {
+    margin-bottom: 15px;
+  }
+  .advertising__partnersList {
+    display: flex;
+  }
+  .advertising__partnersList li:not(:last-of-type) {
+    margin-right: 50px;
+  }
+  .advertising__mainImg {
+    position: relative;
+    width: 646px;
+    height: 427px;
+    background-image: url('../assets/images/advertising/mainImg2.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .advertising__gear1 {
+    position: absolute;
+    z-index: 2;
+    top: 105px;
+    left: 290px;
+    width: 77px;
+    height: 76px;
+    background-image: url('../assets/images/advertising/gear1.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: spinRight 5s linear infinite;
+  }
+  .advertising__gear2 {
+    position: absolute;
+    z-index: 2;
+    top: 170px;
+    left: 360px;
+    width: 50px;
+    height: 51px;
+    background-image: url('../assets/images/advertising/gear2.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: spinRight 4s linear infinite;
+  }
+  .advertising__gear3 {
+    position: absolute;
+    z-index: 2;
+    top: 45px;
+    left: 373px;
+    width: 128px;
+    height: 135px;
+    background-image: url('../assets/images/advertising/gear3.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: spinLeft 5s linear infinite;
+  }
+  .advertising__gear4 {
+    position: absolute;
+    top: 130px;
+    right: 25px;
+    width: 74px;
+    height: 78px;
+    background-image: url('../assets/images/advertising/gear4.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: spinLeft 12s linear infinite;
+  }
+  .advertising__gear5 {
+    position: absolute;
+    top: 10px;
+    left: 135px;
+    width: 118px;
+    height: 120px;
+    background-image: url('../assets/images/advertising/gear5.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: spinRight 15s linear infinite;
+  }
+}

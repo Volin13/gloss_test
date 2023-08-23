@@ -24,6 +24,14 @@ const heroSwiper = new Swiper('.hero__swiper', {
       slidesPerView: 1,
       height: 583,
     },
+    1440: {
+      slidesPerView: 1,
+      height: 583,
+    },
+    1920: {
+      slidesPerView: 1,
+      height: 583,
+    },
   },
   pagination: {
     el: '.swiper-pagination',

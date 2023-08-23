@@ -99,17 +99,6 @@ $marginSecond: 0, 133, 166, 134, 0;
   background-repeat: no-repeat;
   background-size: contain;
 }
-
-.bgImg2 {
-  position: absolute;
-  width: 613.616px;
-  height: 681.185px;
-  transform: rotate(57.235deg);
-  opacity: 0.05;
-  top: 2970px;
-  right: 0;
-  z-index: -1;
-}
 .swiper-thumb {
   position: relative;
 }
@@ -131,7 +120,7 @@ $marginSecond: 0, 133, 166, 134, 0;
   right: -28px;
   top: 50%;
 }
-.bg__figure2 {
+.bgImg2 {
   position: absolute;
   width: 614px;
   height: 681px;
@@ -139,5 +128,182 @@ $marginSecond: 0, 133, 166, 134, 0;
   background-repeat: no-repeat;
   background-size: cover;
   right: 0;
-  top: 4000px;
+  z-index: -1;
+  top: 2000px;
+}
+
+@media screen and (min-width: 375px) {
+}
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 990px) {
+  .benefits__firstListItem,
+  .benefits__secondListItem {
+    max-width: 520px;
+    position: relative;
+    min-height: 125px;
+  }
+  .benefits__mainLogo {
+    width: 455px;
+    height: 432px;
+    position: absolute;
+    display: inline-block;
+    z-index: -1;
+    top: 339px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url('../assets/images/benefits/benefits_mainLogo.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .benefits__firstList,
+  .benefits__secondList {
+    min-height: 705px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .benefits__title {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1280px) {
+}
+@media screen and (min-width: 1440px) {
+  .benefits__firstListItem,
+  .benefits__secondListItem {
+    max-width: 280px;
+    min-height: 125px;
+  }
+  .benefits__mainLogo {
+    top: 325px;
+  }
+  .benefits__firstList,
+  .benefits__secondList {
+    min-height: 850px;
+  }
+  .benefits__title {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  .bgImg2 {
+    position: absolute;
+    width: 614px;
+    height: 681px;
+    background-image: url('../assets/images/bg/bg__charity.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    right: 0;
+    z-index: -1;
+    top: 736px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .benefits__box {
+    margin-bottom: 50px;
+  }
+  .benefits__text {
+    font-size: 16px;
+  }
+
+  .benefits__firstList,
+  .benefits__secondList {
+    min-height: 705px;
+  }
+
+  .benefits__firstListItem,
+  .benefits__secondListItem {
+    max-width: 520px;
+    min-height: 125px;
+  }
+
+  .benefits__title {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  $countFirst: first, second, third, fourth, fifth;
+  @each $count in $countFirst {
+    $index: index($countFirst, $count);
+    .benefits__firstListItem:nth-child(#{$index})::after {
+      content: '';
+      stroke: $primary_black;
+      position: absolute;
+      right: -100px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: url('../assets/images/benefits/#{$count}.svg'),
+        $yellow_gradient;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+  $marginFirst: 166, 33, 0, 34, 165;
+  @each $marginValueFirst in $marginFirst {
+    $index: index($marginFirst, $marginValueFirst);
+    .benefits__firstListItem:nth-child(#{$index}) {
+      margin-left: #{$marginValueFirst}px;
+    }
+  }
+
+  $countSecond: sixth, seventh, eighth, ninth, tenth;
+  @each $count in $countSecond {
+    $index: index($countSecond, $count);
+    .benefits__secondListItem:nth-child(#{$index})::before {
+      content: '';
+      stroke: $primary_black;
+      position: absolute;
+      left: -100px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: url('../assets/images/benefits/#{$count}.svg'),
+        $yellow_gradient;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+
+  $marginSecond: 0, 133, 166, 134, 0;
+  @each $marginValueSecond in $marginSecond {
+    $index: index($marginSecond, $marginValueSecond);
+    .benefits__secondListItem:nth-child(#{$index}) {
+      margin-left: #{$marginValueSecond}px;
+    }
+  }
+  .benefits__mainLogo {
+    width: 455px;
+    height: 432px;
+    top: 339px;
+  }
+
+  .swiper_button {
+    width: 56px;
+    height: 53px;
+  }
+  .swiper-button-prev {
+    left: -28px;
+    top: 50%;
+  }
+  .swiper-button-next {
+    right: -28px;
+    top: 50%;
+  }
+  .bgImg2 {
+    position: absolute;
+    width: 614px;
+    height: 681px;
+    background-image: url('../assets/images/bg/bg__charity.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    right: 0;
+    z-index: -1;
+    top: 2000px;
+  }
 }

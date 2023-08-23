@@ -22,6 +22,16 @@ const swiper = new Swiper('.benefits__swiper', {
       spaceBetween: 14,
       height: 288,
     },
+    1440: {
+      slidesPerView: 3,
+      spaceBetween: 14,
+      height: 288,
+    },
+    1920: {
+      slidesPerView: 4,
+      spaceBetween: 14,
+      height: 288,
+    },
   },
   navigation: {
     nextEl: '.swiper-button-next',

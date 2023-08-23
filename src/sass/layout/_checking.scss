@@ -32,3 +32,39 @@
 ::-webkit-scrollbar-thumb:hover {
   background-color: $secondary_yellow;
 }
+
+@media screen and (min-width: 375px) {
+}
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 990px) {
+}
+@media screen and (min-width: 1280px) {
+}
+@media screen and (min-width: 1440px) {
+  .checking__image {
+    border-radius: 10px;
+    margin-right: 28px;
+    width: 650px;
+    height: 350px;
+  }
+  .bg__figure2 {
+    position: absolute;
+    width: 614px;
+    height: 681px;
+    background-image: url('../assets/images/bg/bg__charity.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    right: 0;
+    z-index: -1;
+    top: 4000px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .checking__image {
+    border-radius: 10px;
+    margin-right: 40px;
+    width: 900px;
+    height: 464px;
+  }
+}
