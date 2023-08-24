@@ -12,7 +12,8 @@
   },
   "scripts": {
     "start": "parcel --open --no-cache --port 7777",
-    "build": "parcel build"
+    "build": "parcel build",
+    "lint:js": "eslint src/**/*.{js}"
   },
   "repository": {
     "type": "git",
@@ -22,7 +23,7 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Volin13/gloss_test"
+    "url": "https://github.com/Volin13/gloss_test/issues"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.0",

@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="/index.b07a87f3.css">
   </head>
   <body>
-    <div class="previewSection">
-      <header class="container header">
+    <header class="container header">
   <svg class="header__logo">
     <use href="/icons.81ed4e63.svg#icon-logo"></use>
   </svg>
@@ -37,19 +36,23 @@
   <div class="header__contacts">
     <ul class="header__socialMedia">
       <li>
-        <svg class="header__socialMediaIcon">
-          <use href="/icons.81ed4e63.svg#icon-facebook"></use>
-        </svg>
+        <a href="https://www.facebook.com/">
+          <svg class="header__socialMediaIcon">
+            <use href="/icons.81ed4e63.svg#icon-facebook"></use>
+          </svg>
+        </a>
       </li>
       <li>
-        <svg class="header__socialMediaIcon">
-          <use href="/icons.81ed4e63.svg#icon-instIcon"></use>
-        </svg>
+        <a href="https://www.instagram.com/">
+          <img class="header__socialMediaIcon" src="/instIcon.c1e8626c.svg" alt="instagram icon">
+        </a>
       </li>
       <li>
-        <svg class="header__socialMediaIcon">
-          <use href="/icons.81ed4e63.svg#icon-viberIcon"></use>
-        </svg>
+        <a href="https://www.viber.com/">
+          <svg class="header__socialMediaIcon">
+            <use href="/icons.81ed4e63.svg#icon-viberIcon"></use>
+          </svg>
+        </a>
       </li>
     </ul>
     <div class="header__phoneNumbers">
@@ -63,17 +66,13 @@
             <a class="header__number" href="tel:0 (800) 759-758">0 (800) 759-758</a>
           </li>
         </ul>
-        <button class="arrowButton" type="button">
-          <svg class="arrowIcon" width="24" height="24">
-            <use href="/icons.81ed4e63.svg#arrowDown"></use>
-          </svg>
-        </button>
+        <button class="arrowButton arrowDown" type="button"></button>
       </div>
     </div>
   </div>
 </header>
 
-      <section class="container hero">
+    <section class="container hero">
   <h3 class="hero__secondaryTitle">Вебстудія №1 з розробки сайтів</h3>
   <div class="hero__swiper swiper swiper-container">
     <div class="swiper-wrapper">
@@ -111,8 +110,8 @@
         </div>
       </div>
     </div>
-    <div class="swiper-pagination"></div>
   </div>
+  <div class="swiper-pagination"></div>
 
   <button class="hero__learmMoreBtn">
     <span>Дізнатися більше</span>
@@ -125,8 +124,8 @@
   <div class="hero__secondImage"></div>
 </section>
 
-    </div>
-    <section class="container checking">
+    <div class="previewSection previewSectionHidden">
+      <section class="container checking">
   <h2>Перевірка тествого завдання</h2>
   <div class="checking__block">
     <picture>
@@ -206,26 +205,34 @@
   </div>
 </section>
 
-    <section id="advertising">
+      <section id="advertising">
   <div class="advertising">
     <div class="container advertising__thumb">
       <div class="advertising__textBox">
         <h2>Найкраща компанія для роботи в IT</h2>
         <ul class="advertising__list">
           <li>
-            <strong>Вебстудія Глянець — команда, яка налічує понад 50 професіоналів
-            </strong>
+            <p>
+              <strong>Вебстудія Глянець — команда, яка налічує понад 50 професіоналів
+              </strong>
+            </p>
           </li>
           <li>
-            Наша компанія має власний офіс, хостинг, проводить навчання кадрів,
-            здійснює контроль якості кожного проєкту.
+            <p>
+              Наша компанія має власний офіс, хостинг, проводить навчання
+              кадрів, здійснює контроль якості кожного проєкту.
+            </p>
           </li>
           <li>
-            За час своєї роботи ми розробили сотні інтернет-магазинів, які
-            працюють у всіх країнах світу, продаючи своїм замовникам тисячі
-            товарів на добу.
+            <p>
+              За час своєї роботи ми розробили сотні інтернет-магазинів, які
+              працюють у всіх країнах світу, продаючи своїм замовникам тисячі
+              товарів на добу.
+            </p>
           </li>
-          <li><b>Глянець</b> — це надійність. Перевірено досвідом!</li>
+          <li>
+            <p><b>Глянець</b> — це надійність. Перевірено досвідом!</p>
+          </li>
         </ul>
         <ul class="advertising__partnersList">
           <li>
@@ -245,13 +252,19 @@
           </li>
         </ul>
       </div>
-      <img class="advertising__img" src="/advertising_img.bb9a6530.svg" alt="people are learning programming">
+      <div class="advertising__mainImg">
+        <div class="advertising__gear1"></div>
+        <div class="advertising__gear2"></div>
+        <div class="advertising__gear3"></div>
+        <div class="advertising__gear4"></div>
+        <div class="advertising__gear5"></div>
+      </div>
     </div>
     <div class="backgroundFigure"></div>
   </div>
 </section>
 
-    <section class="container benefits" id="benefits">
+      <section class="container benefits" id="benefits">
   <h2>У нас</h2>
   <div class="benefits__box">
     <ul class="benefits__firstList">
@@ -386,7 +399,7 @@
   <div class="bgImg2"></div>
 </section>
 
-    <section class="container impact" id="drupal">
+      <section class="container impact" id="drupal">
   <h2>Наш вклад в Drupal</h2>
   <ul class="impact__list">
     <li class="impact__card">
@@ -430,7 +443,7 @@
   </ul>
 </section>
 
-    <section class="container" id="partners">
+      <section class="container" id="partners">
   <h2>З нами працюють:</h2>
   <div class="partners__swiper-thumb">
     <div class="partners__swiper swiper swiper-container">
@@ -512,7 +525,7 @@
   </div>
 </section>
 
-    <section class="container charity" id="charity">
+      <section class="container charity" id="charity">
   <div class="charity__thumb">
     <div class="charity__legend">
       <h2 class="charity__maintitle">Благодійність</h2>
@@ -663,12 +676,13 @@
       </a>
     </li>
   </ul>
+  <div class="bg__figure3"></div>
 </section>
 
-    <footer class="footer">
+      <footer class="footer">
   <div class="footer__thumb">
     <div class="footer__textBox">
-      <svg class="header__logo">
+      <svg class="footer__logo" width="266px" height="71px">
         <use href="/icons.81ed4e63.svg#icon-logo_footer"></use>
       </svg>
       <p class="footer__text">
@@ -734,7 +748,8 @@
               </a>
             </li>
             <li class="footer__addressItem footer__coordinats">
-              <a href="https://goo.gl/maps/KDQ87d3uSinEBiJ38">GPS: 49.234384, 28.394405</a>
+              <a href="https://goo.gl/maps/KDQ87d3uSinEBiJ38">GPS:
+                <span class="footer__addressItem_underlinedText">49.234384, 28.394405</span></a>
             </li>
           </ul>
         </address>
@@ -763,7 +778,8 @@
   </div>
 </footer>
 
-    
+      
+    </div>
 
     <script src="/index.18dbc454.js" defer=""></script>
     <script src="/index.993cf04e.js" defer=""></script>

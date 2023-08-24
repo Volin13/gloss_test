@@ -599,9 +599,19 @@ const swiper2 = new (0, _swiperDefault.default)(".partners__swiper", {
             spaceBetween: 30
         },
         1280: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+            height: 155
+        },
+        1440: {
+            slidesPerView: 5,
+            spaceBetween: 30,
+            height: 155
+        },
+        1920: {
             slidesPerView: 6,
             spaceBetween: 30,
-            height: 150
+            height: 155
         }
     },
     navigation: {
