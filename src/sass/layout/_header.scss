@@ -53,7 +53,9 @@
   transition: all 500ms;
 }
 .header__socialMediaIcon:hover,
-.header__socialMediaIcon:focus {
+.header__socialMediaIcon:focus,
+.arrowButton:hover,
+.arrowButton:focus {
   scale: 1.15;
 }
 
@@ -84,6 +86,7 @@
   height: 33px;
 }
 .arrowButton {
+  transition: all 500ms;
   position: absolute;
   top: 5px;
   right: 0;

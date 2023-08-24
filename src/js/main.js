@@ -56,9 +56,10 @@ function updateArrowIcon() {
 toggleBodyHeightButton.addEventListener('click', toggleSectionHeight);
 
 function toggleSectionHeight() {
-  limitedSection.style.height = 'auto';
-  document.body.style.overflow = 'auto';
-  body.classList.toggle('no-scroll');
+  limitedSection.classList.replace(
+    'previewSectionHidden',
+    'previewSectionShowed',
+  );
   toggleBodyHeightButton.style.display = 'none';
   toggleBodyHeightButton.removeEventListener('click', toggleSectionHeight);
 }

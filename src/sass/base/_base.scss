@@ -36,9 +36,7 @@ body {
   background-color: $bg_color;
   color: $primary_black;
 }
-body.no-scroll {
-  overflow: hidden;
-}
+
 /* Box sizing rules */
 *,
 *::before,
@@ -180,10 +178,22 @@ a {
 address {
   font-style: normal;
 }
-.previewSection {
-  height: 100vh;
+.previewSectionHidden {
+  display: none;
 }
-
+.previewSectionShowed {
+  animation: showHidden 1s linear;
+}
+@keyframes showHidden {
+  0% {
+    opacity: 0;
+    transform: translate(40px, 40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
 @media screen and (min-width: 375px) {
 }
 @media screen and (min-width: 768px) {
