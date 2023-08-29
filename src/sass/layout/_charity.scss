@@ -221,8 +221,6 @@
   }
 }
 @media screen and (min-width: 1280px) {
-}
-@media screen and (min-width: 1440px) {
   .charity {
     padding-bottom: 60px;
   }
@@ -298,6 +296,66 @@
     right: 0;
     z-index: -1;
     top: 3587px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .charity {
+    padding-bottom: 75px;
+  }
+  .charity__thumb {
+    padding-bottom: 38px;
+    gap: 108px;
+  }
+  .charity__maintitle {
+    margin-bottom: 57px;
+  }
+
+  .charity__legend {
+    max-width: 562px;
+  }
+  .charity__boldText {
+    margin-bottom: 7.5px;
+  }
+  .charity__images {
+    width: 658px;
+    min-height: 350px;
+  }
+  .charity__firstImg {
+    width: 310px;
+    height: 260px;
+    top: 56px;
+  }
+  .charity__secondImg {
+    width: 282px;
+    height: 210px;
+    top: 140px;
+    right: 77px;
+  }
+  .charity__thirdImg {
+    width: 388px;
+    height: 264px;
+  }
+  .charity__item {
+    flex-basis: calc((100% - 45px) / 3);
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  .charity__item a {
+    padding: 15px 8px;
+  }
+  .charity__icon {
+    margin-bottom: 12px;
+    width: 60px;
+    height: 60px;
+  }
+  .charity__title {
+    margin-bottom: 12px;
+  }
+  .bg__figure3 {
+    width: 586px;
+    height: 525px;
+    top: 2000px;
   }
 }
 @media screen and (min-width: 1920px) {

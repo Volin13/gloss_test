@@ -2,6 +2,8 @@ const phoneNumbersListEl = document.querySelector('.header__phonesThumb ul');
 const phoneListButton = document.querySelector('.arrowButton');
 const toggleBodyHeightButton = document.querySelector('.hero__learmMoreBtn');
 const limitedSection = document.querySelector('.previewSection');
+const hiddenBenefitsText = document.querySelector('.benefits__text');
+const benefitsTitle = document.querySelector('.benefits__firstListItem');
 
 document.addEventListener('DOMContentLoaded', function () {
   const navLinks = document.querySelectorAll('.nav__link');
@@ -62,4 +64,19 @@ function toggleSectionHeight() {
   );
   toggleBodyHeightButton.style.display = 'none';
   toggleBodyHeightButton.removeEventListener('click', toggleSectionHeight);
+}
+
+const screenWidth = 1440;
+
+benefitsTitle.addEventListener('click', toggleElVisibility);
+
+function toggleElVisibility() {
+  if (
+    hiddenBenefitsText.style.height === '0px' ||
+    hiddenBenefitsText.style.height === ''
+  ) {
+    hiddenBenefitsText.style.height = 'auto';
+  } else {
+    hiddenBenefitsText.style.height = '0px';
+  }
 }

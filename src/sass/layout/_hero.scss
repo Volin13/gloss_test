@@ -165,16 +165,21 @@
   }
 }
 @media screen and (min-width: 1280px) {
-}
-@media screen and (min-width: 1440px) {
+  .hero__secondaryTitle {
+    font-size: 20px;
+  }
+
   .hero__card {
-    width: 744px;
-    height: 408px;
+    width: 668px;
+    height: 500px;
   }
   .hero__title {
-    font-size: 80px;
+    font-size: 75px;
     line-height: 1.1;
     margin-bottom: 20px;
+  }
+  .hero__legend {
+    font-size: 18px;
   }
   .hero__firstImage {
     width: 510px;
@@ -194,36 +199,43 @@
     top: 96px;
   }
 }
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1440px) {
   .hero__firstImage {
-    position: absolute;
     width: 729.044px;
     height: 809.146px;
     top: 200px;
     right: 0;
-    background-image: url('../assets/images/hero/hero_first_img.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
   }
   .hero__secondImage {
-    position: absolute;
     width: 667px;
     height: 654px;
     top: 234px;
     right: 75px;
-    background-image: url('../assets/images/hero/hero_second_img.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
-    animation: flyingMan 20s infinite;
   }
   .hero__bubbles {
-    position: absolute;
     width: 1283px;
     height: 615px;
     top: 137px;
     left: 0;
-    background-image: url('../assets/images/hero/heroCardBackground.svg');
-    background-repeat: no-repeat;
-    background-size: contain;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .hero__firstImage {
+    width: 729.044px;
+    height: 809.146px;
+    top: 200px;
+    right: 0;
+  }
+  .hero__secondImage {
+    width: 667px;
+    height: 654px;
+    top: 234px;
+    right: 75px;
+  }
+  .hero__bubbles {
+    width: 1283px;
+    height: 615px;
+    top: 137px;
+    left: 0;
   }
 }
